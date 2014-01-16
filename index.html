@@ -41,19 +41,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#top" id="menu_top"><b>SMART CITY STARTUPS 2014</b>
+          <a class="navbar-brand" href="#target_top" id="menu_top"><b>SMART CITY STARTUPS 2014</b>
           	<br><small>April 24 & 25 2014</small>
           	<br><small>Miami, FL USA</small>
           </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="menu_participants" href="#participants">Who</a></li>
-            <li><a id="menu_decription" href="#description">What</a></li>
-            <li><a id="menu_location" href="#location">Where</a></li>
-            <li><a id="menu_details" href="#details">Why</a></li>
-            <li><a id="menu_schedule" href="#schedule">When</a></li>
-            <li><a id="menu_sponsors" href="#sponsors">How</a></li>
+            <li><a id="menu_participants" href="#target_participants" class="btn btn-outline-inverse">Who</a></li>
+            <li><a id="menu_decription" href="#target_description" class="btn btn-outline-inverse">What</a></li>
+            <li><a id="menu_location" href="#target_location" class="btn btn-outline-inverse">Where</a></li>
+            <li><a id="menu_details" href="#target_details" class="btn btn-outline-inverse">Why</a></li>
+            <li><a id="menu_schedule" href="#target_schedule" class="btn btn-outline-inverse">When</a></li>
+            <li><a id="menu_sponsors" href="#target_sponsors" class="btn btn-outline-inverse">How</a></li>
           </ul>
           <div class="" style="display:none; top: 39px;position: fixed;height: 5px;width: 50px;background-color: white;left: 857px;" id="menu_bar"></div>
         </div><!--/.nav-collapse -->
@@ -64,7 +64,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<a id="top"></a>
+					<a id="target_top"> </a>
 					<h1>Where Startups and Cities<br/>
 					meet to solve urban challenges.</h1>
 					<form class="form-inline" role="form">
@@ -102,7 +102,7 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<a id="participants"></a>				
+				<a id="target_participants"> </a>				
 				<h1>Participants</h1>
 				<h3>We are welcoming exciting startup teams, engaged cities, and active investors from around the globe.</h3>
 			</div>
@@ -172,7 +172,7 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<a id="description"></a>
+				<a id="target_description"> </a>
 				<h1>Startups + Cities + Investors</h1>
 				<h3>The first event focused on how to help startups solve urban challenges.</h3>
 			</div>
@@ -224,7 +224,7 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<a id="location"></a>
+				<a id="target_location"> </a>
 				<h1>Location</h1>
 				<h3>Miami, FL USA</h3>				
 			</div>
@@ -259,7 +259,7 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-8 col-lg-offset-1" style="text-align:left;">
-				<a id="details"></a>				
+				<a id="target_details"> </a>				
 				<h1 style="color:deepskyblue;"><strong>S</strong>mart<br> <strong>C</strong>ity<br> <strong>S</strong>tartups - 20<strong>14</strong></h1>
 				<h3>The first gathering to explore how we can help startups to solve our biggest urban challenges in areas like sustainable buildings, mobility, governance and service delivery.</h3>
 <br>
@@ -286,7 +286,7 @@
 		<div class="container" >
 
 			<div class="row mt centered">
-				<a id="schedule"></a>
+				<a id="target_schedule"> </a>
 
 				<h1>Agenda</h1>
 			</div>
@@ -409,7 +409,7 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<a id="sponsors"></a>				
+				<a id="target_sponsors"> </a>				
 				<h1>Our Awesome Sponsors.</h1>
 				<h3>This event is made possible with the support of individuals, companies, and organizations that believe startups can help solve some of our biggest urban challenges.</h3>
 			</div>
@@ -476,7 +476,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
  
     <script type="text/javascript">
     //credit http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
@@ -508,7 +510,7 @@
 	      	var target = $(this.hash);
 	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      	console.log(target.selector)
-	      	if (target == '#top') {
+	      	if (target == '#target_top') {
 	        	$('html,body').animate({
 	        	  scrollTop: 0
 	        	}, 1000);
@@ -582,5 +584,14 @@
     		}
     	
     </script>
+    <script type="text/javascript">
+    	$("[id^='target_']").appear();
+        $("[id^='target_']").on('appear', function(event, $all_appeared_elements) {
+        	var target = event.currentTarget.id;
+        	$('a[href^="#target_"]').removeClass('active');
+        	$('a[href="#'+target+'"]').addClass('active');
+    	});
+    </script>
+
   </body>
 </html>

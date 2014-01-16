@@ -1,3 +1,24 @@
+.btn-outline-inverse {
+	color: #fff;
+	background-color: transparent;
+	/*border-color: #cdbfe3;*/
+	margin: 20px 5px 20px 0;
+	padding: 18px 24px;
+}
+
+.btn-outline-inverse:hover,
+.btn-outline-inverse:focus {
+  /*color: #563d7c;*/
+  /*text-shadow: none;*/
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.active {
+  border-color: #fff;
+}
+
+
 	#map_canvas {
         margin: 0;
         padding: 0;
