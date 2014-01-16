@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#top"><b>SMART CITY STARTUPS 2014</b>
+          <a class="navbar-brand" href="#top" id="menu_top"><b>SMART CITY STARTUPS 2014</b>
           	<br><small>April 24 & 25 2014</small>
           	<br><small>Miami, FL USA</small>
           </a>
@@ -523,7 +523,7 @@
 	    }
 	  });
 	  $("[id^='menu_']").on('click', function(){
-	  		if($('#mobile_bar').is(":visible")){
+	  		if($('#mobile_bar').is(":visible") && $('#menu_participants').is(':visible')){
 	  			$('#mobile_bar').click();
 	  		}
 
