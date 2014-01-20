@@ -615,22 +615,28 @@
 	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      	console.log(target.selector)
 	      	if (target.selector.indexOf('target_description') > -1) {
-	        	window.history.pushState({},'Smart City Startups','#what')
+	      		ga('send', 'pageview', {'page': '/#what','title': 'Smart City Startups - What'};
+	        	window.history.pushState({},'Smart City Startups - What','#what')
 	        }	   
 	      	if (target.selector.indexOf('target_participants') > -1) {
-	        	window.history.pushState({},'Smart City Startups','#who')
+	      		ga('send', 'pageview', {'page': '/#who','title': 'Smart City Startups - Who'};
+	        	window.history.pushState({},'Smart City Startups - Who','#who')
 	        }	 
 	      	if (target.selector.indexOf('target_location') > -1) {
-	        	window.history.pushState({},'Smart City Startups','#where')
+	      		ga('send', 'pageview', {'page': '/#where','title': 'Smart City Startups - Where'};	      		
+	        	window.history.pushState({},'Smart City Startups - Where','#where')
 	        }	 
 
 	      	if (target.selector.indexOf('target_schedule') > -1) {
-	        	window.history.pushState({},'Smart City Startups','#agenda')
+	      		ga('send', 'pageview', {'page': '/#agenda','title': 'Smart City Startups - Agenda'};	      		
+	        	window.history.pushState({},'Smart City Startups - Agenda','#agenda')
 	        }	 
 	      	if (target.selector.indexOf('target_sponsors') > -1) {
-	        	window.history.pushState({},'Smart City Startups','#how')
+	      		ga('send', 'pageview', {'page': '/#how','title': 'Smart City Startups - How'};	      		
+	        	window.history.pushState({},'Smart City Startups - How','#how')
 	        }	 	        	        	        	           	
 	      	if (target.selector.indexOf('target_top') > -1) {
+	      		ga('send', 'pageview', {'page': '/','title': 'Smart City Startups'};	      		
 	        	window.history.pushState({},'Smart City Startups','/')
 
 	        	$('html,body').animate({
@@ -717,6 +723,15 @@
         	$('a[href="#'+target+'"]').addClass('active');
     	});
     </script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-47305010-1', 'smartcitystartups.com');
+	  ga('send', 'pageview');
+
+	</script>
   </body>
 </html>
