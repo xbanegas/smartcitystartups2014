@@ -22,7 +22,11 @@
 
     <!-- Fonts from Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-    
+    <style>
+    	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  			display: none !important;
+		}
+    </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -71,7 +75,11 @@
 					  <!-- <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div> -->
-					  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+
+					  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+
+				  	  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg ng-cloak">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+
 					</form>		
 					<br>
 					<br>
@@ -153,7 +161,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -439,7 +448,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"><small>* Travel accommodations will be provided for qualifying startups.</small></div>
@@ -474,7 +484,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -669,7 +680,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -758,7 +770,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -829,7 +842,8 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
