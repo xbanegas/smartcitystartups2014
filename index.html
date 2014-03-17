@@ -30,7 +30,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-controller="MainCtrl">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -71,7 +71,7 @@
 					  <!-- <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div> -->
-					  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+					  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 					</form>		
 					<br>
 					<br>
@@ -153,7 +153,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -164,7 +164,7 @@
 	</div><!-- /container -->
 
 
-	<div class="container" ng-controller="MainCtrl">
+	<div class="container" >
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<a id="target_participants"> </a>				
@@ -439,7 +439,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"><small>* Travel accommodations will be provided for qualifying startups.</small></div>
@@ -474,7 +474,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -669,7 +669,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -758,7 +758,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -829,7 +829,7 @@
 				  <!--<div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>-->
-				  <a href="http://urbanusco.bizodo.com/f/RFt7S" target="_blank" class="btn btn-warning btn-lg">Attend</a>
+				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink || 'http://urbanusco.bizodo.com/f/RFt7S'}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink && 'RSVP' || 'Attend'}}</a>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -1000,7 +1000,8 @@
 	</script>
 	<script>
 		var app = angular.module( 'scs414', [] );
-		app.controller( 'MainCtrl', function( $scope ) {
+		app.controller( 'MainCtrl', function( $scope, $location ) {
+			$scope.rsvplink = $location.search().rsvp || 'RFt7S';
 			$scope.attRows = [
 			['bmw','vastvc','newurbanmechanics'],
 			['omidyar','citymart','cleanweb'],
@@ -1186,7 +1187,6 @@
 					  	logo_width:240,
 					  	domain:'neweconomyinitiative.org'}							  					  						  						  	
 					};
-			console.log($scope.brands);
 
 			});
 
