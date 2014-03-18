@@ -73,7 +73,7 @@
 					<h1>Exploring how we can help startups that are making cities smart.</h1>
 					<form class="form-inline" role="form">
 					  <!-- <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+					    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 					  </div> -->
 
 					  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
@@ -159,7 +159,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -446,7 +446,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -460,16 +460,30 @@
 
 	
 	<div class="container">
-		<div class="row mt centered">
+		<div class="row mt centered" >
 			<div class="col-lg-6 col-lg-offset-3">
 				<a id="target_location"> </a>
+					<form class="form-inline" role="form" ng-submit="unlock(reg.email)" ng-hide="unlocked">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="" ng-model="reg.email" placeholder="Enter registered email address">
+					  </div>
+					  <a href="" class="btn btn-warning" ng-click="unlock(reg.email)">Unlock Location Details</a>
+					</form>				
+			</div>		
+		</div>
+		<div class="row mt centered" ng-show="unlocked">
+			<div ng-bind-html="eventDetails"></div>
+		</div>		
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Location</h1>
 				<h3>Miami, FL USA</h3>				
-			</div>
+			</div>			
 			<div class="col-lg-8">
 				<div id="map_canvas"></div>	
 			</div>	
 			<div class="col-lg-2">
+				
 				<div id="weather"></div>
 			</div>				
 		</div><!-- /row -->
@@ -482,7 +496,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -678,7 +692,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -768,7 +782,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -840,7 +854,7 @@
 			<div class="col-lg-6 col-lg-offset-3">
 				<form class="form-inline" role="form">
 				  <!--<div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+				    <input type="email" class="form-control" id="" placeholder="Enter your email address">
 				  </div>-->
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-hide="rsvplink" target="_blank" class="btn btn-warning btn-lg">Attend</a>
 				  <a href="http://urbanusco.bizodo.com/f/RFt7S" ng-cloak ng-href="{{'http://urbanusco.bizodo.com/f/'+rsvplink}}" target="_blank" class="btn btn-warning btn-lg">{{rsvplink != 'RFt7S' && 'RSVP' || 'Attend'}}</a>
@@ -862,6 +876,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/angular.js"></script>
+    <script src="http://code.angularjs.org/1.0.6/angular-sanitize.js"></script>
  
     <script type="text/javascript">
     //credit http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
@@ -1013,8 +1028,30 @@
 
 	</script>
 	<script>
-		var app = angular.module( 'scs414', [] );
-		app.controller( 'MainCtrl', function( $scope, $location ) {
+		var app = angular.module( 'scs414', ['ngSanitize'] );
+		app.controller( 'MainCtrl', function( $scope, $location, $http ) {
+			$scope.reg = {email : ''}
+			$scope.unlock = function(a){
+				console.log($scope.reg, a)
+				if(a){
+					$http.get(a, {}, {cache:false}).success(function(data){
+						console.log(data);
+						if(data.success){
+							$scope.unlocked = true;
+							$scope.reg.email = '';
+							$scope.eventDetails = data.html;
+
+						} else {
+							alert('Unable to unlock location detail with the email provided. Please try again or contact us to confirm your RSVP. ');
+						}
+					}).error(function(err,data){
+						alert('Unable to unlock location detail with the email provided. Please try again or contact us to confirm your RSVP. ');
+					})
+
+				}
+
+
+			}
 			$scope.rsvplink = $location.search().rsvp || 'RFt7S';
 			$scope.attRows = [
 			['bmw','vastvc','newurbanmechanics'],
