@@ -477,7 +477,7 @@
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Location</h1>
-				<h3>Miami, FL USA</h3>				
+				<h3>{{loc}}</h3>				
 			</div>			
 			<div class="col-lg-8">
 				<div id="map_canvas"></div>	
@@ -960,17 +960,30 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
       var map;
-      function initialize() {
+      function initialize(o,address, zoom, pin) {
+      	var a = address || 'miami, us';
+      	var z = zoom || 12;
         var geocoder =  new google.maps.Geocoder();
-    	geocoder.geocode( { 'address': 'miami, us'}, function(results, status) {
+        console.log(a, z)
+    	geocoder.geocode( { 'address': a}, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
+          	var locCenter = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
             var mapOptions = {
-        	  zoom: 12,
-        	  center: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()),
+        	  zoom: z,
+        	  center: locCenter,
         	  mapTypeId: google.maps.MapTypeId.ROADMAP
         	};
         	map = new google.maps.Map(document.getElementById('map_canvas'),
-            mapOptions);
+            mapOptions);        	
+        	if(pin){
+        		var marker = new google.maps.Marker({
+			      position: locCenter,
+			      map: map,
+			      title: 'LightBox'
+			  });
+        	}
+
+
           } 
         });
         
@@ -1028,8 +1041,18 @@
 
 	</script>
 	<script>
+	//getUrlVars from http://papermashup.com/read-url-get-variables-withjavascript/
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
 		var app = angular.module( 'scs414', ['ngSanitize'] );
-		app.controller( 'MainCtrl', function( $scope, $location, $http ) {
+		app.value('$anchorScroll', null);
+		app.controller( 'MainCtrl', function( $scope, $http ) {
+			$scope.loc = "Miami, FL USA";
 			$scope.reg = {email : ''}
 			$scope.unlock = function(a){
 				console.log($scope.reg, a)
@@ -1040,6 +1063,9 @@
 							$scope.unlocked = true;
 							$scope.reg.email = '';
 							$scope.eventDetails = data.html;
+							$scope.loc = data.address + ' USA';
+							initialize({},data.address,13,1)
+
 
 						} else {
 							alert('Unable to unlock location detail with the email provided. Please try again or contact us to confirm your RSVP. ');
@@ -1052,7 +1078,9 @@
 
 
 			}
-			$scope.rsvplink = $location.search().rsvp || 'RFt7S';
+			console.log(getUrlVars()["rsvp"])
+			$scope.rsvplink = getUrlVars()["rsvp"] || 'RFt7S';
+
 			$scope.attRows = [
 			['bmw','vastvc','newurbanmechanics'],
 			['omidyar','citymart','cleanweb'],
