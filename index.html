@@ -1057,6 +1057,7 @@
 			$scope.unlock = function(a){
 				console.log($scope.reg, a)
 				if(a){
+					a = a.toLocaleLowerCase();
 					$http.get(a, {}, {cache:false}).success(function(data){
 						console.log(data);
 						if(data.success){
