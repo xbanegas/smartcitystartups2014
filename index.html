@@ -463,6 +463,9 @@
 		<div class="row mt centered" >
 			<div class="col-lg-6 col-lg-offset-3">
 				<a id="target_location"> </a>
+					<span ng-bind-html="eventDetailsDL">
+					</span>
+					<span id="add_to_cal"></span>
 					<form class="form-inline" role="form" ng-submit="unlock(reg.email)" ng-hide="unlocked">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="" ng-model="reg.email" placeholder="Enter registered email address">
@@ -470,10 +473,11 @@
 					  <a href="" class="btn btn-warning" ng-click="unlock(reg.email)">Unlock Location Details</a><br><small> Unlocking location details will give you everything you need for<br> your visit like event address, contact information, hotels, etc.</small>
 					</form>				
 			</div>		
-		</div>
-		<div class="row mt centered" ng-show="unlocked">
 			<div ng-bind-html="eventDetails"></div>
-		</div>		
+
+		</div>
+
+	
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Location</h1>
@@ -1051,7 +1055,7 @@
 		}
 		var app = angular.module( 'scs414', ['ngSanitize'] );
 		app.value('$anchorScroll', null);
-		app.controller( 'MainCtrl', function( $scope, $http ) {
+		app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
 			$scope.loc = "Miami, FL USA";
 			$scope.reg = {email : ''}
 			$scope.unlock = function(a){
@@ -1064,8 +1068,14 @@
 							$scope.unlocked = true;
 							$scope.reg.email = '';
 							$scope.eventDetails = data.html;
+							$scope.eventDetailsDL = data.html2;
 							$scope.loc = data.address + ' USA';
 							initialize({},data.address,13,1)
+							
+							var frameHTML = '<iframe src="'+data.src+'" width="100%" height="50px" frameBorder="0" style="margin-left:90px" scrolling="no"></iframe>'
+							console.log(frameHTML)
+        					$compile(frameHTML)($scope).appendTo($('#add_to_cal'));
+        
 
 
 						} else {
@@ -1276,6 +1286,8 @@
 			});
 
 	</script>
+	<!-- AddThisEvent -->
+	<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>	
   </body>
 </html>
 
