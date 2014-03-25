@@ -465,7 +465,7 @@
 				<a id="target_location"> </a>
 					<span ng-bind-html="eventDetailsDL">
 					</span>
-					<div id="add_to_cal" class="col-lg-12"></span>
+					<span id="add_to_cal" class="col-lg-12"></span>
 					<form class="form-inline" role="form" ng-submit="unlock(reg.email)" ng-hide="unlocked">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="" ng-model="reg.email" placeholder="Enter registered email address">
@@ -1103,8 +1103,30 @@
 			['learnernation','neighbor','pwrstation'],
 			['rachio','seamlessdocs','kiwi'],
 			['whatupbridge','thetransitapp','spravwater'],
-			['cyclehop','ccresidential','pedleymillin']];
-			$scope.brands = {'bmw':
+			['cyclehop','ccresidential','pedleymillin'],
+			['straat', 'miles', 'privateadvising']
+			];
+			$scope.brands = {'privateadvising':
+						{url: 'http://http://privateadvising.com/',
+						logo: 'pag.jpg',
+						logo_width: 240,
+						domain: 'privateadvising.com'},
+						'miles':
+						{url: 'http://madeinles.org/',
+						logo: 'mileslogo.png',
+						logo_width: 140,
+						domain: 'madeinles.org'},
+						'sustainventures':
+						{url: 'https://twitter.com/Sustain305',
+						logo: 'sustainventures.png',
+						logo_width: 140,
+						domain: 'sustainventures.com'},
+						'straat':
+						{url: 'http://www.straat.co/',
+						logo: 'straat.png',
+						logo_width: 140,
+						domain: 'straat.co'},
+						'bmw':
 						{url: 'http://www.bmw.com/com/en/insights/corporation/bmwi_ventures/index.html',
 						logo: '4bmw_logo.png',
 						logo_width: 140,
