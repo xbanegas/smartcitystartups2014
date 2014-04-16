@@ -215,7 +215,9 @@
 		]);
 
 		app.controller( 'MapCtrl', function( $scope, $http, $compile ) {
-			$('#indoorMap').panzoom();
+			$('#indoorMap').panzoom({
+				minScale: 0
+			});
 
 		});
 
