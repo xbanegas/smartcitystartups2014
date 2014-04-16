@@ -1,0 +1,27 @@
+		<div class="row mt centered">
+			<a></a><br>
+			<div class="col-lg-12" >
+				<form class="form-inline" role="form">
+
+					<input class="form-control" type="text" placeholder="Search" ng-model="peopleQuery"/> <!-- <button class="btn btn-link">Download CSV</button> -->
+				</form>
+			</div>
+			<div class="col-lg-12 " >
+			  <br>
+			  <hr>
+			  <br>
+			  <ul class="list-unstyled">
+			  	<li ng-repeat="person in people | filter:peopleQuery | orderBy:name">
+			  		<div class="col-lg-4 container" >
+			  			<img class="img-responsive" ng-src="assets/img/{{person.logo}}" alt="" style="max-height: 100px; max-width:100%; margin: 0 auto;">
+			  		<div>
+			  		<h2>{{person.name}}, <small>{{person.title}}</small></h2>
+			  		<small>Twitter</small> : {{person.twitter}}</br>
+			  		<small>LinkedIn</small> : {{person.linkedin}}<br>
+			  		<br>
+			  		<hr>
+			  	</li>
+			  </ul>
+
+			</div>
+		</div><!-- /row -->
