@@ -79,6 +79,8 @@
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/angular.js"></script>
     <script src="http://code.angularjs.org/1.0.6/angular-sanitize.js"></script>
+
+    <script src="assets/js/jquery.panzoom.js"></script>
  
     <script type="text/javascript">
     //credit http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
@@ -167,14 +169,7 @@
     		}
     	
     </script>
-    <script type="text/javascript">
-    	$("[id^='target_']").appear();
-        $("[id^='target_']").on('appear', function(event, $all_appeared_elements) {
-        	var target = event.currentTarget.id;
-        	$('a[href^="#target_"]').removeClass('active');
-        	$('a[href="#'+target+'"]').addClass('active');
-    	});
-    </script>
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -220,6 +215,7 @@
 		]);
 
 		app.controller( 'MapCtrl', function( $scope, $http, $compile ) {
+			$('#indoorMap').panzoom();
 
 		});
 
