@@ -11,17 +11,27 @@
 			  <hr>
 			  <br>
 			  <ul class="list-unstyled">
-			  	<li ng-repeat="person in people | filter:peopleQuery | orderBy:name">
-			  		<div class="col-lg-4 container" >
-			  			<img class="img-responsive" ng-src="assets/img/{{person.logo}}" alt="" style="max-height: 100px; max-width:100%; margin: 0 auto;">
-			  		<div>
-			  		<h2>{{person.name}}, <small>{{person.title}}</small></h2>
-			  		<small>Twitter</small> : {{person.twitter}}</br>
-			  		<small>LinkedIn</small> : {{person.linkedin}}<br>
-			  		<br>
-			  		<hr>
+			  	<li ng-repeat="person in people | filter:peopleQuery | orderBy:name | limitTo:currLimit">
+			  		<div class="col-lg-2">
+				  		<img class="img-responsive" ng-src="assets/img/{{person.Role || 'City'}}.png" alt="" style="max-height: 100px; max-width:100%; margin: 0 auto;" alt="Role">
+
+			  		</div>
+				  	<div class="col-lg-10" >
+				  		<div class="col-lg-4 container" ng-show="person.Logo">
+				  			<img class="img-responsive" ng-src="assets/img/{{person.Logo}}" alt="" style="max-height: 100px; max-width:100%; margin: 0 auto;">
+				  		</div>
+				  		<h2>{{person.Name}} <small>, <span ng-show="person.Title">{{person.Title}} </span><span ng-show="person.Title && person.Organization">at </span> <span ng-show="person.Organization">{{person.Organization}}<span></small></h2>
+				  		<span ng-show="person.Twitter"> <small>Twitter</small> : {{person.Twitter}}</br> </span>
+				  		<span ng-show="person.Twitter"> <a ng-href="{{person.Twitter}}" target="_blank"><button class="btn btn-default btn-lg" >Twitter</button></a><br> </span>
+				  		<span ng-show="person.LinkedIn_URL"> <a ng-href="{{person.LinkedIn_URL}}" target="_blank"><button class="btn btn-default btn-lg" >LinkedIn</button></a><br> </span>
+				  		<br>
+				  		<hr>
+				  		
+			  		</div>
+
 			  	</li>
 			  </ul>
 
 			</div>
 		</div><!-- /row -->
+		<div id="peopleViewBottom"></div>

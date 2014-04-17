@@ -52,11 +52,11 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right" onclick="$('#mobile_bar').click()">
             <li><a id="menu_decription" href="#/agenda" class="btn btn-outline-inverse">Agenda</a></li>
-            <li><a id="menu_decription" href="#/maps" class="btn btn-outline-inverse">Maps</a></li>
+            <li><a id="menu_decription" href="#/map" class="btn btn-outline-inverse">Map</a></li>
             <li><a id="menu_decription" href="#/people" class="btn btn-outline-inverse">People</a></li>
-            <li><a id="menu_decription" href="#/groups" class="btn btn-outline-inverse">Groups</a></li>
+            <!--<li><a id="menu_decription" href="#/groups" class="btn btn-outline-inverse">Groups</a></li>-->
             <li><a id="menu_decription" href="#/vote" class="btn btn-outline-inverse">Vote</a></li>
-            <li><a id="menu_decription" href="#/about" class="btn btn-outline-inverse">About</a></li>
+            <li><a id="menu_decription" href="#/contact" class="btn btn-outline-inverse">Contacts</a></li>
           </ul>
           <div class="" style="display:none; top: 39px;position: fixed;height: 5px;width: 50px;background-color: white;left: 857px;" id="menu_bar"></div>
         </div><!--/.nav-collapse -->
@@ -80,7 +80,7 @@
     <script src="assets/js/angular.js"></script>
     <script src="http://code.angularjs.org/1.0.6/angular-sanitize.js"></script>
 
-    <script src="assets/js/jquery.panzoom.js"></script>
+    <!--<script src="assets/js/jquery.panzoom.js"></script>-->
  
     <script type="text/javascript">
     //credit http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
@@ -197,8 +197,8 @@
 		      templateUrl: '/assets/templates/mobile_sched.tmpl.html',
 		      controller: 'SchedCtrl'
 		    });
-		    $routeProvider.when('/maps', {
-		      title: 'Maps',
+		    $routeProvider.when('/map', {
+		      title: 'Map',
 		      templateUrl: '/assets/templates/mobile_map.tmpl.html',
 		      controller: 'MapCtrl'
 		    });		   
@@ -207,6 +207,16 @@
 		      templateUrl: '/assets/templates/mobile_people.tmpl.html',
 		      controller: 'PeopleCtrl'
 		    });		
+		    $routeProvider.when('/contact', {
+		      title: 'Contact',
+		      templateUrl: '/assets/templates/mobile_contact.tmpl.html',
+		      controller: 'ContactCtrl'
+		    });			
+		    $routeProvider.when('/vote', {
+		      title: 'Vote',
+		      templateUrl: '/assets/templates/mobile_vote.tmpl.html',
+		      controller: 'VoteCtrl'
+		    });				    	    
 		    $routeProvider.otherwise({
 		      redirectTo: '/sched'
 		    });
@@ -218,328 +228,39 @@
 		  }
 		]);
 
-		app.controller( 'PeopleCtrl', function( $scope, $http, $compile ) {
-			$scope.people = [
-						{url: 'http://http://privateadvising.com/',
-						logo: 'pag.jpg',
-						logo_width: 240,
-						domain: 'privateadvising.com',
-						name: 'JP Capello',
-						title: 'Owner',
-						twitter: 'twt',
-						linkedin: 'ln'
-						},
-						
-						{url: 'http://madeinles.org/',
-						logo: 'mileslogo.png',
-						logo_width: 140,
-						domain: 'madeinles.org'},
+		app.controller( 'VoteCtrl', function( $scope ) {
 
-						{url: 'https://twitter.com/Sustain305',
-						logo: 'sustainventures.png',
-						logo_width: 140,
-						domain: 'sustainventures.com'},
+		});
 
-						{url: 'http://www.straat.co/',
-						logo: 'straat.png',
-						logo_width: 140,
-						domain: 'straat.co'},
+		app.controller( 'ContactCtrl', function( $scope ) {
 
-						{url: 'http://www.bmw.com/com/en/insights/corporation/bmwi_ventures/index.html',
-						logo: '4bmw_logo.png',
-						logo_width: 140,
-						domain: 'bmw.com'},
+		});
 
-					 	{url: 'http://www.architizer.com/',
-					 	logo: 'architizer.png',
-					 	logo_width: 240,
-					 	domain: 'architizer.com'
-					 	},
+		app.controller( 'PeopleCtrl', function( $scope, $http, $timeout ) {
+			$scope.currLimit = 5;
+			var sheetUrl = '/assets/people.data';
+			$http.get(sheetUrl, {}, {cache:false}).success(function(data){
+				console.log(data);
+				$scope.people = data.Sheet1;
+			});
+			var checkLimit = function(){
+				$timeout(function() {
+	            	if($('#peopleViewBottom').isOnScreen() &&  $scope.currLimit <= $scope.people.length){
+	            		$scope.currLimit += 5;
+	            	};
+	            	checkLimit();
+	          	}, 500)
+			}
+			checkLimit();
+			
 
-					  	{url: 'http://www.brck.com/',
-					  	logo: 'brck-logo.png',
-					  	logo_width: 140,
-					  	domain: 'brck.com'
-					  	},
-
-					  	{url: 'http://www.dash.by/',
-					  	logo: 'dash-logo-web.png',
-					  	logo_width: 140,
-					  	domain: 'dash.by'
-					  	},
-
-					  	{url: 'http://www.seamlessdocs.com/',
-					  	logo: 'seamlessdocs.png',
-					  	logo_width: 240,
-					  	domain: 'seamlessdocs.com'
-					  	},
-
-					  	{url: 'http://www.whatupbridge.com/',
-					  	logo: 'wub-logo.png',
-					  	logo_width: 240,
-					  	domain: 'whatupbridge.com',
-					  	},
-
-					  	{url: 'http://www.kiwi.ki/',
-					  	logo: 'kiwiki-logo.png',
-					  	logo_width: 140,
-					  	domain: 'kiwi.ki'
-					  	},
-
-					  	{url: 'http://www.vastvc.com/',
-					  	logo: 'vast-logo.png',
-					  	logo_width: 240,
-					  	domain: 'vastvc.com'
-					  	},
-
-					  	{url: 'http://www.kairos.io/',
-					  	logo: 'kairos-logo-blue-trans.png',
-					  	logo_width: 240,
-					  	domain: 'kairos.io'
-					  	},
-
-					  	{url: 'http://www.cleanweb.co/',
-					  	logo: 'Cleanweblogo_lightbg-176x136.png',
-					  	logo_width: 240,
-					  	domain: 'cleanweb.co'
-					  	},
-
-					  	{url: 'http://www.rach.io/',
-					  	logo: 'rachio.jpg',
-					  	logo_width: 240,
-					  	domain: 'rach.io'
-					  	},
-
-					  	{url: 'http://www.learnernation.com/',
-					  	logo: 'leanernation-logo.jpg',
-					  	logo_width:240,
-					  	domain:'learnernation.com'
-					  	},
-
-					  	{url: 'http://www.citymart.com/',
-					  	logo: 'CityMartLogo.png',
-					  	logo_width: 240,
-					  	domain: 'citymart.com'
-					  	},
-
-					  {url:'http://www.thetransitapp.com/',
-					  	logo:'transitapp.png',
-					  	logo_width:140,
-					  	domain: 'thetransitapp.com'
-					  	},
-
-					  	{url:'http://en.seeclickfix.com/',
-					  	logo: 'scflogo.jpg',
-					  	logo_width:240,
-					  	domain: 'seeclickfix.com'},
-
-					  	{url:'http://tumml.org/',
-					  	logo:'tumml.png',
-					  	logo_width:140,
-					  	domain:'tumml.org'},
-
-					  	{url: 'http://www.codeformiami.org/',
-					  	logo:'code-for-miami-square-logo.png',
-					  	logo_width:140,
-					  	domain:'codeformiami.org'},
-
-					  	{url:'http://www.newurbanmechanics.org/',
-					  	logo:'newurbanmechanics.png',
-					  	logo_width:240,
-					  	domain:'newurbanmechanics.org'},
-
-					  	{url:'http://www.refreshmiami.com/',
-					  	logo:'refreshmiami.png',
-					  	logo_width:240,
-					  	domain:'refreshmiami.com'},
-
-					  	{url:'http://www.livingcities.org/',
-					  	logo:'livingcities.png',
-					  	logo_width:140,
-					  	domain:'livingcities.org'},
-
-					  	{url:'http://www.omidyar.com/',
-					  	logo:'Omidyar_Network.jpg',
-					  	logo_width:140,
-					  	domain:'omidyar.com'},
-
-					  	{url: 'http://www.miamidade.gov/',
-					  	logo:'miami-dade.jpg',
-					  	logo_width:140,
-					  	domain:'miamidade.gov'},
-
-					  	{url:'http://www.neighbor.ly/',
-					  	logo:'neighborly-logo.png',
-					  	logo_width:240,
-					  	domain:'neighbor.ly'},
-
-					  	{url:'http://pwrstation.com/',
-					  	logo:'pwrstation.png',
-					  	logo_width:240,
-					  	domain:'pwrstation.com'},
-
-					  	{url:'http://publicstuff.com/',
-					  	logo:'publicstuff-logo.png',
-					  	logo_width:240,
-					  	domain:'publicstuff.com'},
-
-					  	{url:'http://www.constantcontact.com/',
-					  	logo:'constant_contact_logo.png',
-					  	logo_width:240,
-					  	domain:'constantcontact.com'},	
-
-					  	{url:'http://www.spravwater.com/',
-					  	logo:'spravwater.jpg',
-					  	logo_width:240,
-					  	domain:'spravwater.com'},
-
-					  	{url:'http://www.cyclehop.com/',
-					  	logo:'cyclehop-logo.png',
-					  	logo_width:240,
-					  	domain:'cyclehop.com'},
-
-					  	{url:'http://ccresfl.com/',
-					  	logo:'ccresidential.png',
-					  	logo_width:240,
-					  	domain:'ccresfl.com'},
-
-					  	{url:'http://pedleymillin.com/',
-					  	logo:'pedleymillin.jpg',
-					  	logo_width:240,
-					  	domain:'pedleymillin.com'},	
-
-					  	{url:'http://international.gc.ca/',
-					  	logo:'ccg.jpg',
-					  	logo_width:140,
-					  	domain:'international.gc.ca'},
-
-					  	{url:'http://neweconomyinitiative.org/',
-					  	logo:'nei_logo.png',
-					  	logo_width:240,
-					  	domain:'neweconomyinitiative.org'},
-
-					  	{url:'http://birdi.io/',
-					  	logo:'birdi-logo.png',
-					  	logo_width:140,
-					  	domain:'birdi.io'},
-
-					  	{url:'#',
-					  	logo:'tresmares.jpg',
-					  	logo_width:140,
-					  	domain:'Tres Mares Group'},
-
-					  	{url:'http://makeloveland.com/',
-					  	logo:'loveland.png',
-					  	logo_width:240,
-					  	domain:'makeloveland.com'},
-
-					  	{url:'https://smartprocure.us/',
-					  	logo:'smartprocure.jpg',
-					  	logo_width:200,
-					  	domain:'smartprocure.us'},	
-
-					  	{url:'http://republicbike.com/',
-					  	logo:'republicbike.png',
-					  	logo_width:240,
-					  	domain:'republicbike.com'},		
-
-					  	{url:'https://wagner.nyu.edu/rudincenter/',
-					  	logo:'nyu.jpg',
-					  	logo_width:140,
-					  	domain:'wagner.nyu.edu'},	
-
-					  	{url:'http://www.kauffman.org/',
-					  	logo:'kauffman.png',
-					  	logo_width:240,
-					  	domain:'kauffman.org'},	
-
-					  	{url:'http://www.p3gm.com/',
-					  	logo:'p3gm.png',
-					  	logo_width:140,
-					  	domain:'p3gm.com'},		  					  	
-
-					  	{url:'http://www.hraadvisors.com/',
-					  	logo:'hraadvisors-logo.png',
-					  	logo_width:240,
-					  	domain:'hraadvisors.com'},	
-
-					  	{url:'http://www.urban4m.com/',
-					  	logo:'urban4m.jpg',
-					  	logo_width:240,
-					  	domain:'urban4m.com'},
-
-					  	{url:'http://www.techcocktail.com/',
-					  	logo:'techcocktail.jpg',
-					  	logo_width:240,
-					  	domain:'techcocktail.com'},			
-
-					  	{url:'http://www.bostonglobalventures.com/',
-					  	logo:'bgv.png',
-					  	logo_width:240,
-					  	domain:'bostonglobalventures.com'},		
-
-					  	{url:'http://codeforamerica.org/about/startups/',
-					  	logo:'cfa.png',
-					  	logo_width:240,
-					  	domain:'codeforamerica.org'},	
-
-					  	{url:'http://www.trovedata.com/',
-					  	logo:'trove.png',
-					  	logo_width:240,
-					  	domain:'trovedata.com'},
-
-					  	{url:'http://www.zipcar.com/',
-					  	logo:'zipcar.gif',
-					  	logo_width:140,
-					  	domain:'zipcar.com'},
-
-					  	{url:'http://socialbicycles.com/',
-					  	logo:'sobi.png',
-					  	logo_width:200,
-					  	domain:'socialbicycles.com'},
-
-					  	{url:'http://placemeter.com/',
-					  	logo:'placemeter.png',
-					  	logo_width:240,
-					  	domain:'placemeter.com'},
-
-					  	{url:'http://greaterplaces.com/',
-					  	logo:'greaterplaces.png',
-					  	logo_width:240,
-					  	domain:'greaterplaces.com'},
-
-					  	{url:'http://www.opportunityspace.org/',
-					  	logo:'opportunityspace.jpg',
-					  	logo_width:240,
-					  	domain:'opportunityspace.org'},		
-
-					  	{url:'http://weathercloud.co/',
-					  	logo:'weathercloud.png',
-					  	logo_width:240,
-					  	domain:'weathercloud.co'},			
-
-					  	{url:'http://www.univision.com/',
-					  	logo:'univison.png',
-					  	logo_width:140,
-					  	domain:'univision.com'},
-
-					  	{url:'http://bostonnewtech.org/',
-					  	logo:'bostonnewtech.png',
-					  	logo_width:240,
-					  	domain:'bostonnewtech.org'},
-
-					  	{url:'https://parkjockey.com/',
-					  	logo:'parkjockey.jpg',
-					  	logo_width:240,
-					  	domain:'parkjockey.com'},							  		  		  				  	
-					];
 		});
 
 
 		app.controller( 'MapCtrl', function( $scope, $http, $compile ) {
-			$('#indoorMap').panzoom({
+			/*$('#indoorMap').panzoom({
 				minScale: 10
-			});
+			});*/
 
 		});
 
