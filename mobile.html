@@ -285,7 +285,9 @@
 
 		});
 
-		app.controller( 'SchedCtrl', function( $scope ) {
+		app.controller( 'SchedCtrl', function( $scope, $timeout ) {
+			var offset = -4;
+			$scope.currentTime = new Date( new Date().getTime() + offset * 3600 * 1000).toUTCString().replace( / GMT$/, "" );
 			var maxTimeIndex;
 			var d = new Date();
 			var localTime = d.toISOString();
@@ -304,6 +306,57 @@
 		        	  scrollTop: topScroll - 75
 		        }, 1000);
 			}
+
+			/* CREDIT: Count down until any date script-
+			By JavaScript Kit (www.javascriptkit.com)
+			Over 200+ free scripts here!
+			*/
+
+			var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+			var countdown = function(yr,m,d){
+				$timeout(function() {
+					theyear=yr;themonth=m;theday=d
+					var today=new Date()
+					var todayy=today.getYear()
+					if (todayy < 1000)
+						todayy+=1900
+					var todaym=today.getMonth()
+					var todayd=today.getDate()
+					var todayh=today.getHours()
+					var todaymin=today.getMinutes()
+					var todaysec=today.getSeconds()
+					var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+					futurestring=montharray[m-1]+" "+d+", "+yr
+					dd=Date.parse(futurestring)-Date.parse(todaystring)
+					dday=Math.floor(dd/(60*60*1000*24)*1)
+					dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+					dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+					dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+					if(dday==0&&dhour==0&&dmin==0&&dsec==1){
+						$scope.timeLeft = false;
+						console.log('event already starting')
+						return
+					} else {
+						$scope.timeLeft = dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" seconds ";
+					}
+					countdown(theyear,themonth,theday)
+			      }, 1000);
+			}
+			//enter the count down date using the format year/month/day
+			countdown(2014,4,24)
+			/* end of modified 3rd party code*/
+
+
+
+
+			var updateTime = function(){
+				$timeout(function() {
+			        $scope.currentTime = new Date( new Date().getTime() + offset * 3600 * 1000).toUTCString().replace( / GMT$/, "" );
+			        updateTime();
+			      }, 1000);
+			}
+			updateTime();
 			
 
 		});
