@@ -55,7 +55,8 @@
             <li><a id="menu_decription" href="#/map" class="btn btn-outline-inverse">Map</a></li>
             <li><a id="menu_decription" href="#/people" class="btn btn-outline-inverse">People</a></li>
             <!--<li><a id="menu_decription" href="#/groups" class="btn btn-outline-inverse">Groups</a></li>-->
-            <li><a id="menu_decription" href="#/vote" class="btn btn-outline-inverse">Vote</a></li>
+            <!--<li><a id="menu_decription" href="#/vote" class="btn btn-outline-inverse">Vote</a></li>-->
+            <li><a id="menu_decription" href="#/content" class="btn btn-outline-inverse">Content</a></li>
             <li><a id="menu_decription" href="#/contact" class="btn btn-outline-inverse">Contacts</a></li>
           </ul>
           <div class="" style="display:none; top: 39px;position: fixed;height: 5px;width: 50px;background-color: white;left: 857px;" id="menu_bar"></div>
@@ -180,6 +181,30 @@
 	  ga('send', 'pageview');
 
 	</script>
+    <script src="assets/js/jquery.simpleWeather-2.3.min.js"></script> 
+    <script type="text/javascript">
+		// Docs at http://simpleweatherjs.com
+		$(document).ready(function() {
+		  $.simpleWeather({
+		    zipcode: '',
+		    woeid: '12772142',
+		    location: '',
+		    unit: 'f',
+		    success: function(weather) {
+		      html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+		      html += '<ul>';
+		      html += '<li class="currently">'+weather.currently+' <small>and really nice!</small></li>';
+		      html += '<li>'+weather.tempAlt+'&deg;C</li></ul>';
+		  
+		      $("#weather").html(html);
+		    },
+		    error: function(error) {
+		      $("#weather").html('<p>'+error+'</p>');
+		    }
+		  });
+		});
+
+    </script> 	
 	<script>
 	//getUrlVars from http://papermashup.com/read-url-get-variables-withjavascript/
 		function getUrlVars() {
@@ -216,7 +241,12 @@
 		      title: 'Vote',
 		      templateUrl: '/assets/templates/mobile_vote.tmpl.html',
 		      controller: 'VoteCtrl'
-		    });				    	    
+		    });		
+		    $routeProvider.when('/content', {
+		      title: 'Content',
+		      templateUrl: '/assets/templates/mobile_content.tmpl.html',
+		      controller: 'ContentCtrl'
+		    });			    		    	    
 		    $routeProvider.otherwise({
 		      redirectTo: '/sched'
 		    });
@@ -227,6 +257,10 @@
 		    $locationProvider.html5Mode(true);
 		  }
 		]);
+
+		app.controller( 'ContentCtrl', function( $scope ) {
+
+		});
 
 		app.controller( 'VoteCtrl', function( $scope ) {
 
@@ -240,6 +274,7 @@
 			$scope.showLegend = false;
 			$scope.currLimit = 5;
 			$scope.scrollVis = false;
+			$scope.groups = [];
 			var sheetUrl = '/assets/people.data';
 			$http.get(sheetUrl, {}, {cache:false}).success(function(data){
 				//console.log(data);
