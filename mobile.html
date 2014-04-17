@@ -237,6 +237,7 @@
 		});
 
 		app.controller( 'PeopleCtrl', function( $scope, $http, $timeout ) {
+			$scope.showLegend = false;
 			$scope.currLimit = 5;
 			$scope.scrollVis = false;
 			var sheetUrl = '/assets/people.data';
