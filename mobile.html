@@ -251,7 +251,7 @@
 				$timeout(function() {
 					//console.log($scope.peopleQuery)
 	            	if($('#peopleViewBottom').isOnScreen() &&  !$scope.peopleQuery && $scope.currLimit <= $scope.people.length){
-	            		//$scope.currLimit += 5;
+	            		$scope.currLimit += 5;
 	            	};
 	            	if(checkScroll()){
 	            		$scope.scrollVis = true;
