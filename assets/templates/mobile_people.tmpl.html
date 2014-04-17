@@ -54,7 +54,17 @@
 				  		<span ng-show="person.Twitter"> <small>Twitter</small> : {{person.Twitter}}</br> </span>
 				  		<span ng-show="person.Twitter"> <a ng-href="{{person.Twitter}}" target="_blank"><button class="btn btn-default btn-lg" >Twitter</button></a><br> </span>
 				  		<span ng-show="person.LinkedIn_URL"> <a ng-href="{{person.LinkedIn_URL}}" target="_blank"><button class="btn btn-default btn-lg" >LinkedIn</button></a><br> </span>
-				  		<small ng-show="person.Group">Group : <strong>{{groups[person.Group]}}</strong></small>
+				  		<br><div class="row  centered">
+				  			<div class="col-lg-1 col-lg-offset-5">
+				  				<small ng-show="person.Group">Group : </small>
+					  		</div>
+					  		<div class="col-lg-1">
+					  				<div style=" width: 20px; height: 20px; position: absolute;  background-color: {{groups[person.Group][0]}}; "></div>
+					  		</div>
+					  		<div class="col-lg-1">
+					  			<small><strong>{{groups[person.Group][1]}}</strong></small>
+					  		</div>
+					  	</div>
 				  		<small ng-show="person.Contributor">{{person.Contributor}}</small>
 				  		
 				  		<br>
