@@ -63,7 +63,7 @@
       </div>
     </div>
 
-		<div class="container" ng-view>
+		<div class="container" ng-view style="margin-top:5%">
 		</div>
 		<hr>
 		<p class="centered">&copy; <a href="http://Urban.Us">Urban.Us</a> 2014 - All logos are property of their respective owners</p>
@@ -238,21 +238,42 @@
 
 		app.controller( 'PeopleCtrl', function( $scope, $http, $timeout ) {
 			$scope.currLimit = 5;
+			$scope.scrollVis = false;
 			var sheetUrl = '/assets/people.data';
 			$http.get(sheetUrl, {}, {cache:false}).success(function(data){
-				console.log(data);
+				//console.log(data);
 				$scope.people = data.Sheet1;
 			});
+			var checkScroll = function(){
+				return document.documentElement.scrollHeight >= document.documentElement.clientHeight;
+			}
 			var checkLimit = function(){
 				$timeout(function() {
-	            	if($('#peopleViewBottom').isOnScreen() &&  $scope.currLimit <= $scope.people.length){
-	            		$scope.currLimit += 5;
+					//console.log($scope.peopleQuery)
+	            	if($('#peopleViewBottom').isOnScreen() &&  !$scope.peopleQuery && $scope.currLimit <= $scope.people.length){
+	            		//$scope.currLimit += 5;
 	            	};
+	            	if(checkScroll()){
+	            		$scope.scrollVis = true;
+	            	} else {
+	            		$scope.scrollVis = false;
+	            	}
+
 	            	checkLimit();
 	          	}, 500)
 			}
 			checkLimit();
-			
+			$scope.clearQ = function(){
+				$scope.currLimit = 5;
+				$scope.peopleQuery = "";
+			}
+			$scope.scrollUp = function(){
+				console.log('click')
+				$('html,body').animate({
+	        	  scrollTop: 0
+	        	}, 1000);
+	        	$scope.currLimit = 5;
+			}
 
 		});
 
