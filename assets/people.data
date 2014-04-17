@@ -7,11 +7,10 @@
 "Role": "Advisor",
 "Status": "unconfirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/alexdc",
 "City": "Miami",
-"LinkedIn_URL": "",
-"Contributor":"Demo",
-"Group":1
+"LinkedIn_URL": "https://www.linkedin.com/in/alexdc",
+"Contributor": ""
 },
 {
 "Name": "Allyn Alford",
@@ -20,9 +19,10 @@
 "Role": "UUStartup",
 "Status": "confirmed",
 "Group": 4,
-"Twitter": "",
+"Twitter": "https://twitter.com/Coveted",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/allyna",
+"Contributor": "Demo"
 },
 {
 "Name": "Alon Bonder",
@@ -31,31 +31,34 @@
 "Role": "Advisor",
 "Status": "confirmed",
 "Group": 8,
-"Twitter": "",
+"Twitter": "https://twitter.com/AlonBonder",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/in/alonbonder"
+"LinkedIn_URL": "http://www.linkedin.com/in/alonbonder",
+"Contributor": ""
 },
 {
 "Name": "Alvaro Muniz",
 "Organization": "Miami Dade ",
-"Title": "",
+"Title": "Commision Aide",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 8,
 "Twitter": "",
 "City": "MIami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/pub/alvaro-mu%C3%B1iz/76/52a/b29",
+"Contributor": ""
 },
 {
 "Name": "Ana Colls",
 "Organization": "Village of Key Biscayne",
-"Title": "",
+"Title": "Community Builder",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/AnaInMiami",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/anajcolls",
+"Contributor": ""
 },
 {
 "Name": "Anand Shah",
@@ -64,20 +67,22 @@
 "Role": "Investor",
 "Status": "no",
 "Group": 4,
-"Twitter": "",
+"Twitter": "https://twitter.com/anand77",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/socialinnovator",
+"Contributor": ""
 },
 {
 "Name": "Andrew Frey",
 "Organization": "CC Residential",
-"Title": "",
+"Title": "Developmental Manager",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 1,
 "Twitter": "",
 "City": "MIami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/pub/andrew-frey/21/874/168",
+"Contributor": ""
 },
 {
 "Name": "Andrew Shad",
@@ -88,51 +93,56 @@
 "Group": 9,
 "Twitter": "",
 "City": "Cleveland",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Andy Harris",
 "Organization": "Smartprocure",
-"Title": "",
+"Title": "Vice President of Product",
 "Role": "Startup",
 "Status": "confirmed",
 "Group": 6,
-"Twitter": "",
+"Twitter": "https://twitter.com/a2theharris",
 "City": "Deerfield Beach",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/andywilliamharris",
+"Contributor": "Panelist, Demo"
 },
 {
 "Name": "Annette Beck",
 "Organization": "Kauffman Foundation",
-"Title": "",
+"Title": "Senior Director Entrepreneurship",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 5,
-"Twitter": "",
+"Twitter": "https://twitter.com/topekabeck",
 "City": "Kansas City",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/profile/view?id=591878&authType=NAME_SEARCH&authToken=Em81&locale=en_US&srchid=1562303021397755435086&srchindex=1&srchtotal=31&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1562303021397755435086%2CVSRPtargetId%3A591878%2CVSRPcmpt%3Aprimary",
+"Contributor": ""
 },
 {
 "Name": "Anthony M Townsend",
 "Organization": "NYU",
-"Title": "",
+"Title": "Senior Research Assistant",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 3,
-"Twitter": "",
+"Twitter": "https://twitter.com/anthonymobile",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/anthony-townsend/0/388/545"
+"LinkedIn_URL": "http://www.linkedin.com/pub/anthony-townsend/0/388/545",
+"Contributor": "Panelist"
 },
 {
 "Name": "Anthony Millin",
 "Organization": "Pedley Millin",
-"Title": "",
+"Title": "Partner",
 "Role": "Advisor",
 "Status": "confirmed",
 "Group": 6,
 "Twitter": "",
 "City": "Washington DC",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/pub/anthony-millin/4/51b/492",
+"Contributor": ""
 },
 {
 "Name": "Avery Pack",
@@ -143,18 +153,20 @@
 "Group": 4,
 "Twitter": "",
 "City": "Dania Beach",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Ben Berkowitz",
 "Organization": "See Click Fix",
-"Title": "",
+"Title": "CEO and Co-Founder",
 "Role": "Startup",
 "Status": "confirmed",
 "Group": 6,
-"Twitter": "",
+"Twitter": "https://twitter.com/benberkowitz",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/ben-berkowitz/8/739/22b"
+"LinkedIn_URL": "http://www.linkedin.com/pub/ben-berkowitz/8/739/22b",
+"Contributor": "Panelist, Demo"
 },
 {
 "Name": "Ben Wirz",
@@ -163,31 +175,34 @@
 "Role": "Investor",
 "Status": "unconfirmed",
 "Group": 7,
-"Twitter": "",
+"Twitter": "https://twitter.com/bthewirz",
 "City": "London",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/benoitwirz",
+"Contributor": "Panelist"
 },
 {
 "Name": "Blondet, Lillian",
 "Organization": "Miami-Dade",
-"Title": "",
+"Title": "Assistant Director",
 "Role": "",
 "Status": "confirmed",
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/pub/lillian-blondet/12/59a/266",
+"Contributor": ""
 },
 {
 "Name": "Boris Hirmas",
 "Organization": "Tres Mares",
-"Title": "",
+"Title": "Chairman",
 "Role": "Investor",
 "Status": "confirmed",
 "Group": 8,
-"Twitter": "",
+"Twitter": "https://twitter.com/BorisHirmasMDC",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Brett Hudson",
@@ -196,31 +211,34 @@
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/BrettJHudson",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/pub/brett-hudson/4/491/a30",
+"Contributor": "Group Leader"
 },
 {
 "Name": "Brian Brackeen",
 "Organization": "Kairos",
-"Title": "",
+"Title": "Kairos CEO",
 "Role": "Startup",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/BrianBrackeen",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/brian-langel/20/868/841"
+"LinkedIn_URL": "https://www.linkedin.com/profile/view?id=35806895&authType=NAME_SEARCH&authToken=rwXN&locale=en_US&srchid=1562303021397760136439&srchindex=1&srchtotal=5&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1562303021397760136439%2CVSRPtargetId%3A35806895%2CVSRPcmpt%3Aprimary",
+"Contributor": "Demo"
 },
 {
 "Name": "Brian Breslin",
 "Organization": "Refresh Miami",
-"Title": "",
+"Title": "Founder",
 "Role": "Advisor",
 "Status": "confirmed",
 "Group": 4,
-"Twitter": "",
+"Twitter": "https://twitter.com/brianbreslin",
 "City": "MIami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "https://www.linkedin.com/in/brianbreslin",
+"Contributor": ""
 },
 {
 "Name": "Chatterjee, Sanjeev ",
@@ -229,9 +247,10 @@
 "Role": "Advisor",
 "Status": "confirmed",
 "Group": 8,
-"Twitter": "",
+"Twitter": "https://twitter.com/otherindias",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/in/schatterjee",
+"Contributor": ""
 },
 {
 "Name": "Christian Bogatu",
@@ -242,7 +261,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "Berlin",
-"LinkedIn_URL": "http://www.linkedin.com/pub/christian-bogatu/0/aa3/6b7"
+"LinkedIn_URL": "http://www.linkedin.com/pub/christian-bogatu/0/aa3/6b7",
+"Contributor": "Demo"
 },
 {
 "Name": "Christopher Sopher",
@@ -251,9 +271,10 @@
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 10,
-"Twitter": "",
+"Twitter": "https://twitter.com/knightfdn",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/john-s.-and-james-l.-knight-foundation",
+"Contributor": ""
 },
 {
 "Name": "Clara Brenner",
@@ -262,9 +283,10 @@
 "Role": "Investor",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/Tumml",
 "City": "San Francisco",
-"LinkedIn_URL": "http://www.linkedin.com/pub/clara-brenner/28/248/108"
+"LinkedIn_URL": "http://www.linkedin.com/pub/clara-brenner/28/248/108",
+"Contributor": "Panelist"
 },
 {
 "Name": "Claude Valle",
@@ -273,9 +295,10 @@
 "Role": "Startup",
 "Status": "???",
 "Group": 5,
-"Twitter": "",
+"Twitter": "https://twitter.com/Sprav_Water",
 "City": "Cleveland",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
+"Contributor": ""
 },
 {
 "Name": "Craig Lewis",
@@ -284,9 +307,10 @@
 "Role": "Startup",
 "Status": "???",
 "Group": 0,
-"Twitter": "",
+"Twitter": "https://twitter.com/Sprav_Water",
 "City": "Cleveland",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
+"Contributor": "Demo"
 },
 {
 "Name": "Dan Grech",
@@ -297,7 +321,8 @@
 "Group": 5,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Darrell Darnell",
@@ -306,9 +331,10 @@
 "Role": "Advisor",
 "Status": "confirmed",
 "Group": 0,
-"Twitter": "",
+"Twitter": "https://twitter.com/GWtweets",
 "City": "Washington DC",
-"LinkedIn_URL": "http://www.linkedin.com/pub/darrell-darnell/b/204/48"
+"LinkedIn_URL": "http://www.linkedin.com/pub/darrell-darnell/b/204/48",
+"Contributor": ""
 },
 {
 "Name": "Dharmishta Rood",
@@ -317,8 +343,10 @@
 "Role": "Investor",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
-"City": "San Francisco"
+"Twitter": "https://twitter.com/codeforamerica",
+"City": "San Francisco",
+"LinkedIn_URL": "http://www.linkedin.com/company/code-for-america",
+"Contributor": "Panelist"
 },
 {
 "Name": "Don Jones",
@@ -327,20 +355,22 @@
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 6,
-"Twitter": "",
+"Twitter": "https://twitter.com/neimichigan",
 "City": "Detroit",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Doug Chertok",
 "Organization": "Vast Ventures",
-"Title": "Vast Ventures",
+"Title": "Partner",
 "Role": "Investor",
 "Status": "confirmed",
 "Group": 2,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/doug-chertok/19/b21/397"
+"LinkedIn_URL": "http://www.linkedin.com/pub/doug-chertok/19/b21/397",
+"Contributor": "Panelist"
 },
 {
 "Name": "Eric Ho",
@@ -349,9 +379,10 @@
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 6,
-"Twitter": "",
+"Twitter": "https://twitter.com/ArchiCommons",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Erik Hersman",
@@ -360,20 +391,22 @@
 "Role": "UUStartup",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/brcknet",
 "City": "Nairobi",
-"LinkedIn_URL": "http://www.linkedin.com/in/erikhersman"
+"LinkedIn_URL": "http://www.linkedin.com/in/erikhersman",
+"Contributor": "Demo"
 },
 {
-"Name": "Ernie, Hsiung",
+"Name": "Ernie Hsiung",
 "Organization": "Code for America / Rackspace",
 "Title": "",
 "Role": "Urban Leader",
 "Status": "confirmed",
 "Group": 9,
-"Twitter": "",
+"Twitter": "https://twitter.com/Rackspace",
 "City": "San Francisco",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/rackspace-hosting",
+"Contributor": "Group Leader"
 },
 {
 "Name": "Florent Peyre",
@@ -382,9 +415,10 @@
 "Role": "Startup",
 "Status": "confirmed",
 "Group": "",
-"Twitter": "",
+"Twitter": "https://twitter.com/placemeter",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/placemeter",
+"Contributor": ""
 },
 {
 "Name": "Guillaume Campagna",
@@ -393,9 +427,10 @@
 "Role": "Startup",
 "Status": "confirmed",
 "Group": 7,
-"Twitter": "",
+"Twitter": "https://twitter.com/thetransitapp",
 "City": "Montreal",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/transit-app",
+"Contributor": ""
 },
 {
 "Name": "Heather Lopez",
@@ -404,9 +439,10 @@
 "Role": "Press",
 "Status": "confirmed",
 "Group": "",
-"Twitter": "",
+"Twitter": "https://twitter.com/blogginmamas",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/south-florida-bloggin'-mamas",
+"Contributor": ""
 },
 {
 "Name": "Isaias Sudit",
@@ -415,9 +451,10 @@
 "Role": "Founder",
 "Status": "confirmed",
 "Group": "",
-"Twitter": "",
+"Twitter": "none",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/company/gridglo",
+"Contributor": ""
 },
 {
 "Name": "Israel Medina",
@@ -428,18 +465,20 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Jamyn Edis",
 "Organization": "Dash Labs Inc",
-"Title": "",
+"Title": "Founder, CEO",
 "Role": "UUStartup",
 "Status": "confirmed",
 "Group": 10,
-"Twitter": "",
+"Twitter": "https://twitter.com/jamyn",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/jamyn-edis/0/373/78b"
+"LinkedIn_URL": "http://www.linkedin.com/pub/jamyn-edis/0/373/78b",
+"Contributor": "Demo"
 },
 {
 "Name": "Jeff Friedman",
@@ -448,20 +487,22 @@
 "Role": "Urban Leader",
 "Status": "no",
 "Group": "",
-"Twitter": "",
+"Twitter": "https://twitter.com/Jeff_A_Friedman",
 "City": "Philadelphia",
-"LinkedIn_URL": "http://www.linkedin.com/pub/jeff-friedman/2/797/383"
+"LinkedIn_URL": "http://www.linkedin.com/pub/jeff-friedman/2/797/383",
+"Contributor": ""
 },
 {
 "Name": "Jeff Henretig",
 "Organization": "Made in the Lower East Side",
-"Title": "",
+"Title": "Founder",
 "Role": "Startup",
 "Status": "confirmed",
 "Group": 4,
-"Twitter": "",
+"Twitter": "https://twitter.com/henretipreneur",
 "City": "New",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "http://www.linkedin.com/pub/jeff-henretig/6/418/165",
+"Contributor": ""
 },
 {
 "Name": "Jenny Knight",
@@ -472,7 +513,8 @@
 "Group": 3,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Jerry Paffendorf",
@@ -483,7 +525,8 @@
 "Group": "",
 "Twitter": "",
 "City": "Detroit",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Jonathon Ende",
@@ -494,7 +537,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/in/jonathonende"
+"LinkedIn_URL": "http://www.linkedin.com/in/jonathonende",
+"Contributor": "Demo"
 },
 {
 "Name": "Jordan Mendell",
@@ -505,7 +549,8 @@
 "Group": 1,
 "Twitter": "",
 "City": "Denver",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Jose Rasco",
@@ -516,7 +561,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Josh Gelfman",
@@ -527,7 +573,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist"
 },
 {
 "Name": "Josh Squire",
@@ -538,7 +585,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/pub/josh-squire/54/557/288"
+"LinkedIn_URL": "http://www.linkedin.com/pub/josh-squire/54/557/288",
+"Contributor": ""
 },
 {
 "Name": "Juan Cappello",
@@ -549,18 +597,20 @@
 "Group": 0,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Justin Levinson",
 "Organization": "Urban Us",
 "Title": "",
-"Role": "UU",
+"Role": "Advisor",
 "Status": "???",
 "Group": 6,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Kimberly Marshall",
@@ -571,7 +621,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "?",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Leif Abraham",
@@ -582,7 +633,8 @@
 "Group": 10,
 "Twitter": "",
 "City": "San Francisco",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Lily Liu",
@@ -593,7 +645,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/lily-liu/12/6a1/840"
+"LinkedIn_URL": "http://www.linkedin.com/pub/lily-liu/12/6a1/840",
+"Contributor": "Panelist, Demo"
 },
 {
 "Name": "Lisa Nisenson",
@@ -604,7 +657,8 @@
 "Group": "",
 "Twitter": "",
 "City": "Washington DC",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Ludovic Roche",
@@ -615,7 +669,8 @@
 "Group": 10,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Lyndi Bowman",
@@ -626,7 +681,8 @@
 "Group": 0,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Lynn Miteva",
@@ -637,7 +693,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Marc Kushner",
@@ -648,7 +705,8 @@
 "Group": 3,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Marco Giberti",
@@ -659,7 +717,8 @@
 "Group": 8,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Margaret Cullen",
@@ -670,7 +729,8 @@
 "Group": 9,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Marianne Canero",
@@ -681,7 +741,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/in/mcanero"
+"LinkedIn_URL": "http://www.linkedin.com/in/mcanero",
+"Contributor": ""
 },
 {
 "Name": "Mark Belinsky",
@@ -692,7 +753,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "San Francisco",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Mark Crofton",
@@ -703,7 +765,8 @@
 "Group": 4,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Marshall Cox",
@@ -714,18 +777,20 @@
 "Group": 9,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Matt Haggman",
 "Organization": "Knight Foundation",
 "Title": "",
-"Role": "Investor",
+"Role": "Foundation",
 "Status": "confirmed",
 "Group": 7,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Matt@rach.io",
@@ -736,7 +801,8 @@
 "Group": 8,
 "Twitter": "",
 "City": "Boulder",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "MIcah Kotch",
@@ -747,7 +813,8 @@
 "Group": 8,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist, Group Leader"
 },
 {
 "Name": "Michael Grunwald\n",
@@ -758,7 +825,8 @@
 "Group": "",
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Michael McCord",
@@ -769,7 +837,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo, Group Leader"
 },
 {
 "Name": "Michael Sarasti",
@@ -780,7 +849,8 @@
 "Group": 10,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Nancy Dahlberg",
@@ -791,7 +861,8 @@
 "Group": 2,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Nigel Jacob",
@@ -802,7 +873,8 @@
 "Group": 2,
 "Twitter": "",
 "City": "Boston",
-"LinkedIn_URL": "http://www.linkedin.com/in/nsjacob"
+"LinkedIn_URL": "http://www.linkedin.com/in/nsjacob",
+"Contributor": "Panelist"
 },
 {
 "Name": "Omar Garcia",
@@ -813,7 +885,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Pete Ryder",
@@ -824,7 +897,8 @@
 "Group": 3,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Peter Espersen",
@@ -835,7 +909,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "Copenhagen",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Peter Gerber",
@@ -846,7 +921,8 @@
 "Group": 0,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Peter Martinez",
@@ -857,7 +933,8 @@
 "Group": 9,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Rafael Figueiredo",
@@ -868,7 +945,8 @@
 "Group": 9,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/in/rafaeldbfigueiredo"
+"LinkedIn_URL": "http://www.linkedin.com/in/rafaeldbfigueiredo",
+"Contributor": "Group Leader"
 },
 {
 "Name": "Ray Ruga",
@@ -879,7 +957,8 @@
 "Group": 10,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Rey Bango",
@@ -890,7 +969,8 @@
 "Group": 9,
 "Twitter": "",
 "City": "Boca Raton",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Rob Davis",
@@ -901,7 +981,8 @@
 "Group": 8,
 "Twitter": "",
 "City": "Fort Lauderdale",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Rocio Sanz Cortes",
@@ -912,10 +993,11 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
-"Name": "Rose Boome",
+"Name": "Rose Bloome",
 "Organization": "Handup",
 "Title": "",
 "Role": "UUStartup",
@@ -923,7 +1005,8 @@
 "Group": "",
 "Twitter": "",
 "City": "San Francisco",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Sam Vermette",
@@ -934,7 +1017,8 @@
 "Group": 6,
 "Twitter": "",
 "City": "Montreal",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Sascha Haselmayer",
@@ -945,7 +1029,8 @@
 "Group": 5,
 "Twitter": "",
 "City": "Barcelona",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist"
 },
 {
 "Name": "Sean Connolly ",
@@ -956,7 +1041,8 @@
 "Group": 9,
 "Twitter": "",
 "City": "Kansas City",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist, Demo"
 },
 {
 "Name": "Seema Shah",
@@ -967,7 +1053,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist"
 },
 {
 "Name": "Sergio Fernandez de Cordova",
@@ -978,7 +1065,8 @@
 "Group": 7,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Panelist"
 },
 {
 "Name": "Shantanu Singh",
@@ -989,18 +1077,20 @@
 "Group": 2,
 "Twitter": "",
 "City": "Chicago",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": "Demo"
 },
 {
 "Name": "Shaun Abrahamson",
 "Organization": "Urban.Us",
 "Title": "",
-"Role": "UU",
+"Role": "Investor",
 "Status": "confirmed",
 "Group": 7,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Smokshane West",
@@ -1011,7 +1101,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Sonia Succar Ferré",
@@ -1022,18 +1113,20 @@
 "Group": 3,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Stonly Baptiste",
 "Organization": "Urban.Us",
 "Title": "",
-"Role": "UU",
+"Role": "Investor",
 "Status": "confirmed",
 "Group": 6,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/in/stonly"
+"LinkedIn_URL": "http://www.linkedin.com/in/stonly",
+"Contributor": ""
 },
 {
 "Name": "Story Bellows",
@@ -1044,7 +1137,8 @@
 "Group": 2,
 "Twitter": "",
 "City": "Philadelphia",
-"LinkedIn_URL": "http://www.linkedin.com/in/storybellows"
+"LinkedIn_URL": "http://www.linkedin.com/in/storybellows",
+"Contributor": "Panelist"
 },
 {
 "Name": "Tharald Nustad",
@@ -1055,7 +1149,8 @@
 "Group": 6,
 "Twitter": "",
 "City": "Oslo",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Thom Ruhe",
@@ -1066,7 +1161,8 @@
 "Group": 1,
 "Twitter": "",
 "City": "Kansas City",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Thomas Sevcik",
@@ -1077,7 +1173,8 @@
 "Group": 1,
 "Twitter": "",
 "City": "Zurich",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Todd Chapin",
@@ -1088,7 +1185,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Wifredo Fernandez",
@@ -1099,7 +1197,8 @@
 "Group": 2,
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/pub/wifredo-fernandez/32/b0b/88a"
+"LinkedIn_URL": "http://www.linkedin.com/pub/wifredo-fernandez/32/b0b/88a",
+"Contributor": ""
 },
 {
 "Name": "Zeev Krieger",
@@ -1110,7 +1209,8 @@
 "Group": 5,
 "Twitter": "",
 "City": "New York",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Stephen Keppel",
@@ -1121,7 +1221,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Lillian Blondet",
@@ -1132,7 +1233,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Lisa Nisenson",
@@ -1143,18 +1245,20 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Jennifer Korth",
 "Organization": "City of South Miami City Hall",
 "Title": "Grants & Sustainable Initiatives Administrator",
-"Role": "City",
+"Role": "Government",
 "Status": "confirmed",
 "Group": "",
 "Twitter": "",
 "City": "Miami",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 },
 {
 "Name": "Amy Lawrence",
@@ -1165,7 +1269,8 @@
 "Group": "",
 "Twitter": "",
 "City": "",
-"LinkedIn_URL": ""
+"LinkedIn_URL": "",
+"Contributor": ""
 }
 ]
 }
