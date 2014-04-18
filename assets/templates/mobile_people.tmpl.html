@@ -1,3 +1,26 @@
+<script>
+/* http://jsfiddle.net/livibetter/HV9HM/ */
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top) {
+    	console.log(1)
+        $('#legend').addClass('stick');
+        var bottomOfMenu = $('.navbar-fixed-top').height(); 
+        $('.stick').css('top',(bottomOfMenu+1)+'px')
+        
+    } else {
+    	console.log(2)
+        $('#legend').removeClass('stick');
+    }
+}
+
+$(function () {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+</script>
+
 <br>
 <br>
 		<div class="row mt centered">
@@ -12,9 +35,13 @@
 			<div class="col-lg-12 " >
 			  <br>
 			  <hr>
-			  	<div class='col-lg-12'>
+				<div id="sticky-anchor"></div>
+				<div class="row">
+
+			  	<div class='col-lg-12' id='legend'>
+
 					<div class='panel panel-default'>
-						<div class='panel-heading' ng-click="showLegend = !showLegend">
+						<div class='panel-heading' ng-click="showLegend = !showLegend" >
 							<small >Legend</small>
 						</div>
 						<div class='panel-body' ng-show="showLegend">  
@@ -39,6 +66,7 @@
 						</div>
 					</div>
 				</div>	
+			</div>
 			  <br>
 			  <ul class="list-unstyled">
 			  	<li ng-repeat="person in people | filter:peopleQuery | limitTo:currLimit">

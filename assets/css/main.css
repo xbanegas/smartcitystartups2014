@@ -151,3 +151,11 @@ i {
 	letter-spacing: 1px;
 }
 
+#legend.stick {
+top: 0px;
+border-width: 0 0 1px;
+position: fixed;
+right: 0;
+left: 0;
+z-index: 1030;
+}
