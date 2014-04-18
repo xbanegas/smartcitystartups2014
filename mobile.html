@@ -274,6 +274,7 @@
 
 		app.controller( 'PeopleCtrl', function( $scope, $http, $timeout ) {
 			$scope.showLegend = false;
+			$scope.myFunc = function(){console.log(1)}
 			$scope.currLimit = 5;
 			$scope.scrollVis = false;
 			$scope.groups = [["#F3AD16", "Buttercup"],["#E47698", "Deep Blush"],["#828F72", "Battleship Gray"],["#1C402E", "Everglade"],["#BDBBD7", "Lavender Gray"],["#FFF6D4", "Milk Punch"],["#9DC209", "Pistachio"],["#92000A", "Sangria"],["#685558", "Zambezi"],["#8A73D6", "True V"]];
