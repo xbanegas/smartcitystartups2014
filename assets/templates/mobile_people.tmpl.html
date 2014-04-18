@@ -12,6 +12,7 @@ function sticky_relocate() {
     } else {
     	console.log(2)
         $('#legend').removeClass('stick');
+        $('#legend').css('top','auto');
     }
 }
 
@@ -70,6 +71,9 @@ $(function () {
 				</div>	
 			</div>
 			  <br>
+		<div class="row">
+
+			<div class='col-lg-12' >
 			  <ul class="list-unstyled">
 			  	<li ng-repeat="person in people | filter:peopleQuery | limitTo:currLimit">
 			  		<div class="col-lg-2">
@@ -83,7 +87,8 @@ $(function () {
 				  		<h2>{{person.Name}} <small>, <span ng-show="person.Title">{{person.Title}} </span><span ng-show="person.Title && person.Organization">at </span> <span ng-show="person.Organization">{{person.Organization}}<span><span ng-show="person.City">, {{person.City}}<span></small></h2>
 				  		<span ng-show="person.Twitter"> <a ng-href="{{person.Twitter}}" target="_blank"><button class="btn btn-default btn-lg" >Twitter</button></a><br> </span>
 				  		<span ng-show="person.LinkedIn_URL"> <a ng-href="{{person.LinkedIn_URL}}" target="_blank"><button class="btn btn-default btn-lg" >LinkedIn</button></a><br> </span>
-				  		<br><div class="row  centered">
+				  		<br>
+				  		<div class="row  centered">
 				  			<div class="col-lg-1 col-lg-offset-5">
 				  				<small>Group : </small>
 					  		</div>
@@ -101,6 +106,8 @@ $(function () {
 
 			  	</li>
 			  </ul>
+			</div>
+		</div>
 
 			</div>
 		</div><!-- /row -->
