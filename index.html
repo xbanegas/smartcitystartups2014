@@ -1077,6 +1077,7 @@
 			$scope.reg = {email : ''}
 			$scope.unlock = function(a){
 				console.log($scope.reg, a)
+				var a = 'location_tmpl.html';
 				if(a){
 					a = a.toLocaleLowerCase();
 					$http.get(a, {}, {cache:false}).success(function(data){
