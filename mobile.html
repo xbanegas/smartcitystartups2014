@@ -282,6 +282,7 @@
 			$http.get(sheetUrl, {}, {cache:false}).success(function(data){
 				//console.log(data);
 				$scope.people = data.Sheet1;
+				checkLimit();
 			});
 			var checkScroll = function(){
 				return document.documentElement.scrollHeight >= document.documentElement.clientHeight;
@@ -301,7 +302,7 @@
 	            	checkLimit();
 	          	}, 500)
 			}
-			checkLimit();
+			
 			$scope.clearQ = function(){
 				$scope.currLimit = 5;
 				$scope.peopleQuery = "";
