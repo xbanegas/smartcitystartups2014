@@ -105,6 +105,19 @@
 "": ""
 },
 {
+"Name": "Annette Beck",
+"Organization": "Kauffman Foundation",
+"Title": "Senior Director Entrepreneurship",
+"Role": "Urban Leader",
+"Status": "confirmed",
+"Group": 1,
+"Twitter": "https://twitter.com/topekabeck",
+"City": "Kansas City",
+"LinkedIn_URL": "https://www.linkedin.com/profile/view?id=591878&authType=NAME_SEARCH&authToken=Em81&locale=en_US&srchid=1562303021397755435086&srchindex=1&srchtotal=31&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1562303021397755435086%2CVSRPtargetId%3A591878%2CVSRPcmpt%3Aprimary",
+"Contributor": "",
+"": ""
+},
+{
 "Name": "Todd Chapin",
 "Organization": "Zipcar",
 "Title": "Director of Product & Experience",
@@ -114,19 +127,6 @@
 "Twitter": "https://twitter.com/twchapin",
 "City": "",
 "LinkedIn_URL": "http://www.linkedin.com/in/toddwchapin",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Arvind Kannan",
-"Organization": "Zipcar",
-"Title": "Senior Manager, Strategy & Business Development",
-"Role": "Startup",
-"Status": "",
-"Group": 1,
-"Twitter": "",
-"City": "Boston",
-"LinkedIn_URL": "http://www.linkedin.com/in/kannana",
 "Contributor": "",
 "": ""
 },
@@ -300,6 +300,19 @@
 "": ""
 },
 {
+"Name": "Ezequiel Williams",
+"Organization": "Tech Cochtail",
+"Title": "",
+"Role": "",
+"Status": "",
+"Group": 2,
+"Twitter": "",
+"City": "Miami",
+"LinkedIn_URL": "",
+"Contributor": "",
+"": ""
+},
+{
 "Name": "Brian Brackeen",
 "Organization": "Kairos",
 "Title": "Kairos CEO",
@@ -323,19 +336,6 @@
 "City": "Detroit",
 "LinkedIn_URL": "http://www.linkedin.com/in/jerrypaffendorf",
 "Contributor": "Demo",
-"": ""
-},
-{
-"Name": "Annette Beck",
-"Organization": "Kauffman Foundation",
-"Title": "Senior Director Entrepreneurship",
-"Role": "Urban Leader",
-"Status": "confirmed",
-"Group": 3,
-"Twitter": "https://twitter.com/topekabeck",
-"City": "Kansas City",
-"LinkedIn_URL": "https://www.linkedin.com/profile/view?id=591878&authType=NAME_SEARCH&authToken=Em81&locale=en_US&srchid=1562303021397755435086&srchindex=1&srchtotal=31&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1562303021397755435086%2CVSRPtargetId%3A591878%2CVSRPcmpt%3Aprimary",
-"Contributor": "",
 "": ""
 },
 {
@@ -404,6 +404,19 @@
 "": ""
 },
 {
+"Name": "Arvind Kannan",
+"Organization": "Zipcar",
+"Title": "Senior Manager, Strategy & Business Development",
+"Role": "Startup",
+"Status": "",
+"Group": 3,
+"Twitter": "",
+"City": "Boston",
+"LinkedIn_URL": "http://www.linkedin.com/in/kannana",
+"Contributor": "",
+"": ""
+},
+{
 "Name": "Scott Carpenter",
 "Organization": "ID8 Nation",
 "Title": "",
@@ -439,6 +452,19 @@
 "Twitter": "",
 "City": "Miami",
 "LinkedIn_URL": "http://www.linkedin.com/pub/scott-rosen/10/b3a/952",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Alexander Kapur",
+"Organization": "OpportunitySpace",
+"Title": "Founder & Team Leader",
+"Role": "",
+"Status": "",
+"Group": 3,
+"Twitter": "",
+"City": "Boston",
+"LinkedIn_URL": "http://www.linkedin.com/pub/alexander-kapur/4/265/363",
 "Contributor": "",
 "": ""
 },
@@ -482,19 +508,6 @@
 "": ""
 },
 {
-"Name": "Juan Cappello",
-"Organization": "Private",
-"Title": "CoFounder",
-"Role": "Investor",
-"Status": "",
-"Group": 4,
-"Twitter": "https://twitter.com/CappelloJp",
-"City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/pub/juan-pablo-cappello/56/92b/526",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Kimberly Marshall",
 "Organization": "Uber",
 "Title": "Commercial Product Manager",
@@ -530,6 +543,19 @@
 "Twitter": "https://twitter.com/StephenKeppel",
 "City": "Miami",
 "LinkedIn_URL": "http://www.linkedin.com/in/stephenkeppel",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Juan Cappello",
+"Organization": "Private",
+"Title": "CoFounder",
+"Role": "Investor",
+"Status": "",
+"Group": 4,
+"Twitter": "https://twitter.com/CappelloJp",
+"City": "Miami",
+"LinkedIn_URL": "http://www.linkedin.com/pub/juan-pablo-cappello/56/92b/526",
 "Contributor": "",
 "": ""
 },
@@ -599,6 +625,19 @@
 "": ""
 },
 {
+"Name": "Ivan del Campo",
+"Organization": "Miami-Dade Expressway Authority",
+"Title": "",
+"Role": "",
+"Status": "",
+"Group": 4,
+"Twitter": "",
+"City": "Miami",
+"LinkedIn_URL": "",
+"Contributor": "",
+"": ""
+},
+{
 "Name": "Rafael Figueiredo",
 "Organization": "CleanWeb",
 "Title": "Regional Facilitator",
@@ -609,19 +648,6 @@
 "City": "Miami",
 "LinkedIn_URL": "http://www.linkedin.com/in/rafaeldbfigueiredo",
 "Contributor": "Group Leader",
-"": ""
-},
-{
-"Name": "Story Bellows",
-"Organization": "Philadelphia New Urban Mechanics",
-"Title": "Co-Director",
-"Role": "Urban Leader",
-"Status": "unconfirmed",
-"Group": 5,
-"Twitter": "https://twitter.com/storybellows",
-"City": "Philadelphia",
-"LinkedIn_URL": "http://www.linkedin.com/in/storybellows",
-"Contributor": "Panelist",
 "": ""
 },
 {
@@ -664,19 +690,6 @@
 "": ""
 },
 {
-"Name": "Marco Giberti",
-"Organization": "Vesuvio Ventures",
-"Title": "Partner",
-"Role": "Investor",
-"Status": "part day",
-"Group": 5,
-"Twitter": "",
-"City": "Miami",
-"LinkedIn_URL": "http://www.linkedin.com/in/marcogiberti",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Marshall Cox",
 "Organization": "Radiator Labs",
 "Title": "Founder and CEO",
@@ -690,19 +703,6 @@
 "": ""
 },
 {
-"Name": "Rocio Sanz Cortes",
-"Organization": "BSD Consulting",
-"Title": "Consultant",
-"Role": "",
-"Status": "",
-"Group": 5,
-"Twitter": "",
-"City": "",
-"LinkedIn_URL": "http://www.linkedin.com/pub/rocio-sanz-cortes/1a/b21/384",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Zeev Krieger",
 "Organization": "Goldman Sachs",
 "Title": "Investment Management",
@@ -712,6 +712,45 @@
 "Twitter": "",
 "City": "New York",
 "LinkedIn_URL": "http://www.linkedin.com/in/davidzeev",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Marco Giberti",
+"Organization": "Vesuvio Ventures",
+"Title": "Partner",
+"Role": "Investor",
+"Status": "part day",
+"Group": 5,
+"Twitter": "",
+"City": "Miami",
+"LinkedIn_URL": "http://www.linkedin.com/in/marcogiberti",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Story Bellows",
+"Organization": "Philadelphia New Urban Mechanics",
+"Title": "Co-Director",
+"Role": "Urban Leader",
+"Status": "unconfirmed",
+"Group": 5,
+"Twitter": "https://twitter.com/storybellows",
+"City": "Philadelphia",
+"LinkedIn_URL": "http://www.linkedin.com/in/storybellows",
+"Contributor": "Panelist",
+"": ""
+},
+{
+"Name": "Rocio Sanz Cortes",
+"Organization": "BSD Consulting",
+"Title": "Consultant",
+"Role": "",
+"Status": "",
+"Group": 5,
+"Twitter": "",
+"City": "",
+"LinkedIn_URL": "http://www.linkedin.com/pub/rocio-sanz-cortes/1a/b21/384",
 "Contributor": "",
 "": ""
 },
@@ -846,19 +885,6 @@
 "": ""
 },
 {
-"Name": "Lynn Miteva",
-"Organization": "LSMA Capital,LLC",
-"Title": "Managing Partner",
-"Role": "Investor",
-"Status": "",
-"Group": 6,
-"Twitter": "https://twitter.com/LynnMiteva",
-"City": "",
-"LinkedIn_URL": "http://www.linkedin.com/pub/lynn-miteva/b/bab/206",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Omar Garcia",
 "Organization": "Miami Dade",
 "Title": "",
@@ -881,6 +907,19 @@
 "Twitter": "https://twitter.com/PeterMartinez",
 "City": "Miami",
 "LinkedIn_URL": "http://www.linkedin.com/in/martinezpeter",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Lynn Miteva",
+"Organization": "LSMA Capital,LLC",
+"Title": "Managing Partner",
+"Role": "Investor",
+"Status": "",
+"Group": 6,
+"Twitter": "https://twitter.com/LynnMiteva",
+"City": "",
+"LinkedIn_URL": "http://www.linkedin.com/pub/lynn-miteva/b/bab/206",
 "Contributor": "",
 "": ""
 },
@@ -1002,19 +1041,6 @@
 "": ""
 },
 {
-"Name": "Leif Abraham",
-"Organization": "West",
-"Title": "Creative Director, Product Experience",
-"Role": "Advisor",
-"Status": "unconfirmed",
-"Group": 7,
-"Twitter": "https://twitter.com/search?q=%40leifthunder&src=typd",
-"City": "San Francisco",
-"LinkedIn_URL": "http://www.linkedin.com/in/leifabraham",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Nancy Dahlberg",
 "Organization": "Miami Herald",
 "Title": "Staff Writer",
@@ -1050,6 +1076,19 @@
 "Twitter": "https://twitter.com/SoniaSuccar",
 "City": "Miami",
 "LinkedIn_URL": "http://www.linkedin.com/in/soniasuccar",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Leif Abraham",
+"Organization": "West",
+"Title": "Creative Director, Product Experience",
+"Role": "Advisor",
+"Status": "unconfirmed",
+"Group": 7,
+"Twitter": "https://twitter.com/search?q=%40leifthunder&src=typd",
+"City": "San Francisco",
+"LinkedIn_URL": "http://www.linkedin.com/in/leifabraham",
 "Contributor": "",
 "": ""
 },
@@ -1249,19 +1288,6 @@
 "": ""
 },
 {
-"Name": "Christian Bogatu",
-"Organization": "Kiwi Ki",
-"Title": "Co-Founder",
-"Role": "UUStartup",
-"Status": "no",
-"Group": 9,
-"Twitter": "",
-"City": "Berlin",
-"LinkedIn_URL": "http://www.linkedin.com/pub/christian-bogatu/0/aa3/6b7",
-"Contributor": "Demo",
-"": ""
-},
-{
 "Name": "Eric Ho",
 "Organization": "Architecture Commons",
 "Title": "",
@@ -1379,6 +1405,19 @@
 "": ""
 },
 {
+"Name": "Christian Bogatu",
+"Organization": "Kiwi Ki",
+"Title": "Co-Founder",
+"Role": "UUStartup",
+"Status": "no",
+"Group": 9,
+"Twitter": "",
+"City": "Berlin",
+"LinkedIn_URL": "http://www.linkedin.com/pub/christian-bogatu/0/aa3/6b7",
+"Contributor": "Demo",
+"": ""
+},
+{
 "Name": "Amy Lawrence",
 "Organization": "MDDA",
 "Title": "",
@@ -1401,19 +1440,6 @@
 "Twitter": "https://twitter.com/VivjanM",
 "City": "Boston",
 "LinkedIn_URL": "http://www.linkedin.com/in/vivjan",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Alexander Kapur",
-"Organization": "OpportunitySpace",
-"Title": "Founder & Team Leader",
-"Role": "",
-"Status": "",
-"Group": 9,
-"Twitter": "",
-"City": "Boston",
-"LinkedIn_URL": "http://www.linkedin.com/pub/alexander-kapur/4/265/363",
 "Contributor": "",
 "": ""
 },
@@ -1574,19 +1600,6 @@
 "": ""
 },
 {
-"Name": "Craig Lewis",
-"Organization": "Sprav Water",
-"Title": "Co-Founder",
-"Role": "Startup",
-"Status": "",
-"Group": "",
-"Twitter": "https://twitter.com/Sprav_Water",
-"City": "Cleveland",
-"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
-"Contributor": "Demo",
-"": ""
-},
-{
 "Name": "Erik Hersman",
 "Organization": "BRCK",
 "Title": "Founder",
@@ -1626,45 +1639,6 @@
 "": ""
 },
 {
-"Name": "Ben Wirz",
-"Organization": "Knight Foundation",
-"Title": "Director Business Consulting",
-"Role": "Investor",
-"Status": "unconfirmed",
-"Group": "",
-"Twitter": "https://twitter.com/bthewirz",
-"City": "London",
-"LinkedIn_URL": "https://www.linkedin.com/in/benoitwirz",
-"Contributor": "Panelist",
-"": ""
-},
-{
-"Name": "Alex de Carvalho",
-"Organization": "Constant Contact",
-"Title": "Executive",
-"Role": "Advisor",
-"Status": "unconfirmed",
-"Group": "",
-"Twitter": "https://twitter.com/alexdc",
-"City": "Miami",
-"LinkedIn_URL": "https://www.linkedin.com/in/alexdc",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Anand Shah",
-"Organization": "BMW Impact Ventures",
-"Title": "",
-"Role": "Investor",
-"Status": "no",
-"Group": "",
-"Twitter": "https://twitter.com/anand77",
-"City": "New York",
-"LinkedIn_URL": "https://www.linkedin.com/in/socialinnovator",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Blondet, Lillian",
 "Organization": "Miami-Dade",
 "Title": "Assistant Director",
@@ -1674,71 +1648,6 @@
 "Twitter": "",
 "City": "",
 "LinkedIn_URL": "https://www.linkedin.com/pub/lillian-blondet/12/59a/266",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Claude Valle",
-"Organization": "Sprav Water",
-"Title": "Co-Founder",
-"Role": "Startup",
-"Status": "",
-"Group": "",
-"Twitter": "https://twitter.com/Sprav_Water",
-"City": "Cleveland",
-"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Jeff Friedman",
-"Organization": "City of Philadelphia",
-"Title": "Co-Director, Mayor's Office of New Urban Mechanics",
-"Role": "Urban Leader",
-"Status": "no",
-"Group": "",
-"Twitter": "https://twitter.com/Jeff_A_Friedman",
-"City": "Philadelphia",
-"LinkedIn_URL": "http://www.linkedin.com/pub/jeff-friedman/2/797/383",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Jordan Mendell",
-"Organization": "Draft Kings Inc.",
-"Title": "Head of Mobile & Special Projects",
-"Role": "Investor",
-"Status": "no",
-"Group": "",
-"Twitter": "https://twitter.com/JordanMendell",
-"City": "Denver",
-"LinkedIn_URL": "http://www.linkedin.com/in/jordanmendell",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Justin Levinson",
-"Organization": "Urban Us",
-"Title": "Advisor",
-"Role": "Advisor",
-"Status": "",
-"Group": "",
-"Twitter": "",
-"City": "New York",
-"LinkedIn_URL": "",
-"Contributor": "",
-"": ""
-},
-{
-"Name": "Marc Kushner",
-"Organization": "Architizer LLC",
-"Title": "CEO",
-"Role": "UUStartup",
-"Status": "no",
-"Group": "",
-"Twitter": "https://twitter.com/marchitizer",
-"City": "New York",
-"LinkedIn_URL": "http://www.linkedin.com/pub/marc-kushner/18/859/8",
 "Contributor": "",
 "": ""
 },
@@ -1782,19 +1691,6 @@
 "": ""
 },
 {
-"Name": "Smokshane West",
-"Organization": "Zipcar",
-"Title": "Market Manager",
-"Role": "",
-"Status": "",
-"Group": "",
-"Twitter": "https://twitter.com/Smokshane",
-"City": "",
-"LinkedIn_URL": "",
-"Contributor": "",
-"": ""
-},
-{
 "Name": "Stonly Baptiste",
 "Organization": "Urban.Us",
 "Title": "Co-Founder",
@@ -1825,7 +1721,7 @@
 "Organization": "Code for America",
 "Title": "Fellow",
 "Role": "Urban Leader",
-"Status": "",
+"Status": "confirmed",
 "Group": "",
 "Twitter": "https://twitter.com/monstro",
 "City": "San Francisco",
@@ -1835,13 +1731,143 @@
 },
 {
 "Name": "Andrea Abrahamson",
-"Organization": "Urban.Us",
-"Title": "Creative",
-"Role": "Urban Leader",
-"Status": "",
+"Organization": "The Nhuch",
+"Title": "Artist",
+"Role": "Advisor",
+"Status": "confirmed",
 "Group": "",
 "Twitter": "",
 "City": "San Francisco",
+"LinkedIn_URL": "",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Anand Shah",
+"Organization": "BMW Impact Ventures",
+"Title": "",
+"Role": "Investor",
+"Status": "no",
+"Group": "",
+"Twitter": "https://twitter.com/anand77",
+"City": "New York",
+"LinkedIn_URL": "https://www.linkedin.com/in/socialinnovator",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Jeff Friedman",
+"Organization": "City of Philadelphia",
+"Title": "Co-Director, Mayor's Office of New Urban Mechanics",
+"Role": "Urban Leader",
+"Status": "no",
+"Group": "",
+"Twitter": "https://twitter.com/Jeff_A_Friedman",
+"City": "Philadelphia",
+"LinkedIn_URL": "http://www.linkedin.com/pub/jeff-friedman/2/797/383",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Jordan Mendell",
+"Organization": "Draft Kings Inc.",
+"Title": "Head of Mobile & Special Projects",
+"Role": "Investor",
+"Status": "no",
+"Group": "",
+"Twitter": "https://twitter.com/JordanMendell",
+"City": "Denver",
+"LinkedIn_URL": "http://www.linkedin.com/in/jordanmendell",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Marc Kushner",
+"Organization": "Architizer LLC",
+"Title": "CEO",
+"Role": "UUStartup",
+"Status": "no",
+"Group": "",
+"Twitter": "https://twitter.com/marchitizer",
+"City": "New York",
+"LinkedIn_URL": "http://www.linkedin.com/pub/marc-kushner/18/859/8",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Ben Wirz",
+"Organization": "Knight Foundation",
+"Title": "Director Business Consulting",
+"Role": "Investor",
+"Status": "unconfirmed",
+"Group": "",
+"Twitter": "https://twitter.com/bthewirz",
+"City": "London",
+"LinkedIn_URL": "https://www.linkedin.com/in/benoitwirz",
+"Contributor": "Panelist",
+"": ""
+},
+{
+"Name": "Alex de Carvalho",
+"Organization": "Constant Contact",
+"Title": "Executive",
+"Role": "Advisor",
+"Status": "unconfirmed",
+"Group": "",
+"Twitter": "https://twitter.com/alexdc",
+"City": "Miami",
+"LinkedIn_URL": "https://www.linkedin.com/in/alexdc",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Craig Lewis",
+"Organization": "Sprav Water",
+"Title": "Co-Founder",
+"Role": "Startup",
+"Status": "no",
+"Group": "",
+"Twitter": "https://twitter.com/Sprav_Water",
+"City": "Cleveland",
+"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
+"Contributor": "Demo",
+"": ""
+},
+{
+"Name": "Claude Valle",
+"Organization": "Sprav Water",
+"Title": "Co-Founder",
+"Role": "Startup",
+"Status": "",
+"Group": "",
+"Twitter": "https://twitter.com/Sprav_Water",
+"City": "Cleveland",
+"LinkedIn_URL": "http://www.linkedin.com/company/sprav-water-llc",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Justin Levinson",
+"Organization": "Urban Us",
+"Title": "Advisor",
+"Role": "Advisor",
+"Status": "",
+"Group": "",
+"Twitter": "",
+"City": "New York",
+"LinkedIn_URL": "",
+"Contributor": "",
+"": ""
+},
+{
+"Name": "Smokshane West",
+"Organization": "Zipcar",
+"Title": "Market Manager",
+"Role": "",
+"Status": "",
+"Group": "",
+"Twitter": "https://twitter.com/Smokshane",
+"City": "",
 "LinkedIn_URL": "",
 "Contributor": "",
 "": ""
