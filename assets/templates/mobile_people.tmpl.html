@@ -93,7 +93,7 @@ $(function () {
 				  				<small>Group : #{{person.Group}}</small>
 					  		</div>
 					  		<div class="col-lg-1">
-					  				<div style=" width: 20px; height: 20px; position: relative;  background-color: {{groups[person.Group][0]}}; left: 48%;"></div>
+					  				<div style=" width: 20px; height: 20px; position: relative;  background-color: {{groups[(person.Group-1)][0]}}; left: 48%;"></div>
 					  		
 					  			<small><strong>{{groups[person.Group][1]}}</strong></small>
 					  		</div>
