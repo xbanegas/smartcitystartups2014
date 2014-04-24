@@ -324,8 +324,9 @@
 			var offset = -4;
 			$scope.currentTime = new Date( new Date().getTime() + offset * 3600 * 1000).toUTCString().replace( / GMT$/, "" );
 			var maxTimeIndex;
-			var d = new Date();
+			var d = new Date( new Date().getTime() + offset * 3600 * 1000);
 			var localTime = d.toISOString();
+			console.log(localTime)
 			$( "time" ).each( function( index, element ){
 				var schedTime = $( this )[0].attributes.getNamedItem('datetime').value ;
 			    if(localTime >= schedTime){
@@ -352,7 +353,8 @@
 			var countdown = function(yr,m,d){
 				$timeout(function() {
 					theyear=yr;themonth=m;theday=d
-					var today=new Date()
+					var today=new Date( new Date().getTime() + 0 * 3600 * 1000);
+					console.log(today, offset)
 					var todayy=today.getYear()
 					if (todayy < 1000)
 						todayy+=1900
@@ -379,7 +381,7 @@
 			      }, 1000);
 			}
 			//enter the count down date using the format year/month/day
-			countdown(2014,4,24)
+			//countdown(2014,4,24)
 			/* end of modified 3rd party code*/
 
 
