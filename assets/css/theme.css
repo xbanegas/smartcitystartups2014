@@ -861,7 +861,7 @@ form.subscribe .subscribe-error {color: red;}
 .header.sticky-header .logo {line-height: 1;}
 .header.sticky-header .logo img {height: 30px; margin-top: 3px;}
 @media (max-width: 991px) {
-    .header .logo img {height: 36px; margin-top: 3px;}
+    .header .logo img {height: 28px; margin-top: 3px;}
 }
 .header.sticky-header .navigation {margin-top: 5px;}
 .header.sticky-header .sf-menu a {padding-top: 5px; padding-bottom: 5px;}
