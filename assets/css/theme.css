@@ -2807,6 +2807,6 @@ video#bgvid {
 
 min-width: 100%; 
 width: auto; height: auto; z-index: -100;
-background: url(../img/scs414-bg.jpg) no-repeat;
+background: url("../img/scs414-bg.jpg") no-repeat;
 background-size: cover;
 }
