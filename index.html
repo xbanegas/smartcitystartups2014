@@ -869,7 +869,7 @@
                 <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="0">Participants<small>Join top startups, organizations, and cities from around the world working together to solve urban challenges.</small></h3><small>(this is a list of participants from Smart City Startups 2014)</small>
                 <div class="row" ng-repeat="attRow in attRows">
                     
-                    <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700" ng-repeat="attCol in attRow"> 
+                    <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700" ng-repeat="attCol in attRow" style=" margin-right: 50px;  margin-left: 10px; "> 
                         <div class="thumbnail do-up no-border">
                             <img ng-src="assets/img/logos/{{brands[attCol].logo}}" class="img-responsive" alt="">
                             <div class="caption">
@@ -970,7 +970,7 @@
         </section>
         <!-- /Our Team -->
 
-        <!-- Testimonials --
+        <!-- Testimonials -->
         <section class="page-section light">
             <div class="container">
                 <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="100">What past Participants have to say<small></small></h3>
@@ -978,30 +978,30 @@
 
                     <div class="media testimonial">
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra varius posuere. Sed consectetur rutrum egestas.</p>
-                            <p class="media-heading"><strong>Yarina Crowley</strong></p>
+                            <p>"What was great about this conference was sharing stories about how to get those first few customers. How to get those first few success stories, so you can prove, both to customers, but also potential customers that what you are doing really does have an impact." </p>
+                            <p class="media-heading"> - <strong>Alex Pandel </strong>, Civic Insight</p>
                         </div>
                         <div class="media-object-wrapper text-center"><img class="media-object img-circle" src="assets/img/preview/testimonial-1.jpg" alt=""/></div>
                     </div>
 
                     <div class="media testimonial">
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra varius posuere. Sed consectetur rutrum egestas.</p>
-                            <p class="media-heading"><strong>Yarina Crowley</strong></p>
+                            <p>"One of the things that we really focused on was the type of services, outside of typical funding mechanisms, can be used to help in that first year of operations. Which we know, Public Stuff knows as a start up, is the critical stage of a company. It's the make or break"</p>
+                            <p class="media-heading"> - <strong>Lily Liu</strong>, Public Stuff</p>
                         </div>
                         <div class="media-object-wrapper text-center"><img class="media-object img-circle" src="assets/img/preview/testimonial-2.jpg" alt=""/></div>
                     </div>
                     <div class="media testimonial">
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra varius posuere. Sed consectetur rutrum egestas.</p>
-                            <p class="media-heading"><strong>Yarina Crowley</strong></p>
+                            <p>"I think what Urban.US is doing is really great. I think this is a brand new startup ecosystem of startups trying to solve urban problems, and try to think outside of the box, and really change how governments operate cities."</p>
+                            <p class="media-heading"> - <strong>Sam Vermette</strong>, Transit App</p>
                         </div>
                         <div class="media-object-wrapper text-center"><img class="media-object img-circle" src="assets/img/preview/testimonial-3.jpg" alt=""/></div>
                     </div>
                     <div class="media testimonial">
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra varius posuere. Sed consectetur rutrum egestas.</p>
-                            <p class="media-heading"><strong>Yarina Crowley</strong></p>
+                            <p>"[This team] put an incredible event together."</p>
+                            <p class="media-heading"> - <strong>Ludovic Roche</strong>, PWRstation</p>
                         </div>
                         <div class="media-object-wrapper text-center"><img class="media-object img-circle" src="assets/img/preview/testimonial-4.jpg" alt=""/></div>
                     </div>
@@ -1568,11 +1568,28 @@
         }
         var app = angular.module( 'scs415', [] );
         app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
-
             $scope.attRows = [
-            ['vastvc','miamidade'],
-            ['architizer', 'brck', 'whatupbridge', 'dash'],
-            ['rachio','seamlessdocs','kiwi','handup'],
+            ['bmw','vastvc','omidyar'],
+            ['kauffman','citymart','newurbanmechanics'],
+            ['nyu','cleanweb','livingcities'],
+            ['bostonglobalventures', 'hraadvisors', 'codeforamerica' ],
+            ['ccg','miamidade', 'nei'],
+            ['publicstuff','seeclickfix', 'tumml'],
+            ['constant_contact','brck', 'architizer'],
+            ['birdi', 'dash','kairos'],
+            ['learnernation','neighbor','pwrstation'],
+            ['rachio','seamlessdocs','kiwi'],
+            ['whatupbridge','thetransitapp','spravwater'],
+            ['cyclehop','ccresidential','pedleymillin'],
+            ['straat', 'miles', 'privateadvising'],
+            ['tresmares','loveland','smartprocure'],
+            ['republicbike','p3gm','urban4m'],
+            ['techcocktail', 'refreshmiami','trovedata'],
+            ['zipcar', 'sobi', 'placemeter'],
+            ['greaterplaces', 'opportunityspace', 'weathercloud'],
+            ['univision','bostonnewtech','parkjockey'],
+            ['civicinsight', 'nyupt', 'citytrackerx'],
+            ['handup']
             ];
             $scope.brands = {'privateadvising':
                         {url: 'http://http://privateadvising.com/',
