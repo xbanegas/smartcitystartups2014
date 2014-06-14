@@ -196,32 +196,32 @@
 		  function($routeProvider, $httpProvider) {
 		    $routeProvider.when('/sched', {
 		      title: 'Schedule',
-		      templateUrl: '/assets/templates/mobile_sched.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_sched.tmpl.html',
 		      controller: 'SchedCtrl'
 		    });
 		    $routeProvider.when('/map', {
 		      title: 'Map',
-		      templateUrl: '/assets/templates/mobile_map.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_map.tmpl.html',
 		      controller: 'MapCtrl'
 		    });		   
 		    $routeProvider.when('/people', {
 		      title: 'People',
-		      templateUrl: '/assets/templates/mobile_people.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_people.tmpl.html',
 		      controller: 'PeopleCtrl'
 		    });		
 		    $routeProvider.when('/contact', {
 		      title: 'Contact',
-		      templateUrl: '/assets/templates/mobile_contact.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_contact.tmpl.html',
 		      controller: 'ContactCtrl'
 		    });			
 		    $routeProvider.when('/vote', {
 		      title: 'Vote',
-		      templateUrl: '/assets/templates/mobile_vote.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_vote.tmpl.html',
 		      controller: 'VoteCtrl'
 		    });		
 		    $routeProvider.when('/content', {
 		      title: 'Content',
-		      templateUrl: '/assets/templates/mobile_content.tmpl.html',
+		      templateUrl: 'assets/templates/mobile_content.tmpl.html',
 		      controller: 'ContentCtrl'
 		    });			    		    	    
 		    $routeProvider.otherwise({
@@ -253,7 +253,7 @@
 			$scope.currLimit = 5;
 			$scope.scrollVis = false;
 			$scope.groups = [["#F3AD16", "Buttercup"],["#92000A", "Sangria"], ["#E47698", "Deep Blush"],["#828F72", "Battleship Gray"],["#1C402E", "Everglade"],["#BDBBD7", "Lavender Gray"],["#FFF6D4", "Milk Punch"],["#9DC209", "Pistachio"],["#685558", "Zambezi"],["#8A73D6", "True V"]];
-			var sheetUrl = '/assets/people.data';
+			var sheetUrl = 'assets/people.data';
 			$http.get(sheetUrl, {}, {cache:false}).success(function(data){
 				console.log(data);
 				$scope.people = data.Sheet1;
