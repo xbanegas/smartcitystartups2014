@@ -1460,7 +1460,7 @@ form.subscribe .subscribe-error {color: red;}
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 30px;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, .4);
+    /* text-shadow: 4px 4px 0 rgba(0, 0, 0, .4); */
 }
 
 .alternate .slide-title {
