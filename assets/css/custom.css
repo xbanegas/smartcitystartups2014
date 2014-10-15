@@ -1,0 +1,118 @@
+/*==================================================
+=                  Sticky Header                   =
+==================================================*/
+
+/*==========  Body Padding  ==========*/
+
+body { padding-top: 100px; }
+.header.sticky-header .logo img { margin-top: 6px; }
+
+@media (max-width: 991px) {
+    .wide .header,
+    .boxed .header > .container { height: 44px; }
+    body { padding-top: 44px; }
+    .header #mobile-menu, .header .logo { position: relative; top: 8px; }
+    .header.sticky-header .logo img { margin-top: 4px; }
+}
+
+/*==========  Navigation   ==========*/
+
+.sf-menu li > a { font-size: 14px; }
+
+/*-----  End of Sticky Header Body Padding  ------*/
+
+
+
+/*===================================
+=            #Top Slider            =
+===================================*/
+
+/*==========  .slide-image  ==========*/
+
+video#bgvid { height: 100%;}
+
+/*==========  .slide-caption  ==========*/
+
+.countdown-section { border: none; border-radius: 10%; }
+
+.countdown-amount,
+.countdown-period { font-size: 2em; }
+
+@media (max-width: 991px) {
+	.countdown-period { font-size: 9px; }
+}
+
+/*-----  End of #Top Slider  ------*/
+
+
+
+/*================================
+=            Schedule            =
+================================*/
+
+#schedule .slide-title { color: #374146; }
+
+/*-----  End of Schedule  ------*/
+
+
+
+/*================================
+=            Speakers            =
+================================*/
+
+.section-title small { text-transform: none; }
+
+#speakers-title { margin-bottom: 30px;}
+
+#speakers .thumbnail { height: 200px; }
+#speakers .thumbnail img { 
+	width: 50%; 
+	position: absolute;
+	top: 20%;
+	left: 25%;
+}
+
+.do-up:hover .caption {background: rgba(30, 144, 255, 0.90);}
+
+@media (max-width: 991px) {
+	#speakers .thumbnail { height: 150px; }
+	.speaker { display: inline-block; }
+	#speakers .thumbnail img {
+		width: 75%;
+		position: relative;
+		left: 0%;
+	}
+	.do-up .caption-category a { font-size: 9px; word-wrap: break-word;}
+	.thumbnail .caption { padding: 9px 0px; }
+}
+/*-----  End of Speakers  ------*/
+
+
+/*====================================
+=            Testimonials            =
+====================================*/
+
+.testimonial { text-align: left; }
+
+/*-----  End of Testimonials  ------*/
+
+/*================================
+=            Sponsors            =
+================================*/
+
+#partners .owl-item { 
+	margin: 3px;
+	padding: 4%;
+}
+
+#partners .owl-item img {
+	 display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*-----  End of Sponsors  ------*/
+
+
+
+

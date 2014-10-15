@@ -156,7 +156,8 @@ var theme = function () {
         addStickyClass();
 
         $(window).scroll(function () {
-            addStickyClass()
+            addStickyClass();
+
         });
     }
 
