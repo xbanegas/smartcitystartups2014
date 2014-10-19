@@ -298,8 +298,8 @@ var theme = function () {
         mh = 0;
 
     }
-    $(window).load(function(){ resizeSlider() });
-    $(window).resize(function(){ resizeSlider() });
+    // $(window).load(function(){ resizeSlider() });
+    // $(window).resize(function(){ resizeSlider() });
 
     // ---------------------------------------------------------------------------------------
     // preloader
