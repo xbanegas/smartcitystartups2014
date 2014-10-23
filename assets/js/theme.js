@@ -177,7 +177,7 @@ var theme = function () {
             });
             return false;
         });
-        $(".scroll-to").click(function () {
+        $(".scroll-three").click(function () {
 
             var headerH = $('header').outerHeight();
             $(".sf-menu a").removeClass('active');
