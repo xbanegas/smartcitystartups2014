@@ -5,6 +5,7 @@
 /*==========  Body Padding  ==========*/
 
 body { padding-top: 100px; }
+
 .header.sticky-header .logo img { margin-top: 6px; }
 
 @media (max-width: 991px) {
@@ -29,25 +30,57 @@ body { padding-top: 100px; }
 =            #Top Slider            =
 ===================================*/
 
+
+.wide .page-section.slider > .container { margin-bottom: 0; }
+#top-slider { padding-bottom: 0px; padding-top: 0px; }
+
+@media (max-width: 991px) {
+	#top-slider { padding-top: 70px; }
+}
+
 /*==========  .slide-image  ==========*/
 
-video#bgvid { height: 100%; }
+video#bgvid { width:100%; }
+
+
+
 
 @media (max-width: 991px) {
 	.main-slider .slide1 .slide-image { overflow: hidden; }
+	video#bgvid { height:100%; width:auto;}
 }
 
 /*==========  .slide-caption  ==========*/
 
-.countdown-section { border: none; border-radius: 10%; }
+
+
+.countdown-section { border: none; }
 .countdown-amount,
-.countdown-period { font-size: 2em; }
+.countdown-period { font-size: 1.7em; }
+
+.slide-caption-inner { margin-top: 15%!important; }
 
 @media (max-width: 991px) {
 	.countdown-period { font-size: 9px; }
 }
 
 /*-----  End of #Top Slider  ------*/
+
+
+
+/*==============================
+=            #About            =
+==============================*/
+
+.media .media-body p { text-align: left; }
+
+@media (max-width: 991px) {
+	#about { padding-top: 0px; }
+}
+
+/*-----  End of #About  ------*/
+
+
 
 
 
@@ -65,29 +98,39 @@ video#bgvid { height: 100%; }
 =            Speakers            =
 ================================*/
 
+#about-participants { margin-bottom: 5%; }
+
 .section-title small { text-transform: none; }
 
 #speakers-title { margin-bottom: 30px;}
 
-#speakers .thumbnail { height: 200px; }
+#speakers .thumbnail { height: 300px; }
 #speakers .thumbnail img { 
-	width: 50%; 
-	position: absolute;
-	top: 20%;
-	left: 25%;
+	height: auto;
+	width: auto;
+	max-width: 160px;
+	position: relative;
+	top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .do-up:hover .caption { background: rgba(30, 144, 255, 0.90); }
+.do-up:hover .caption-text { color: #e0ffff; }
+.do-up .caption-text { color: #3498db; }
 
 @media (max-width: 991px) {
+	.section-title { margin-bottom: 30px; }
+	#about-participants { margin-bottom: 15% }
 	.speaker { display: inline-block; }
-	#speakers .thumbnail { height: 150px; }
+	#speakers .thumbnail { height: 175px; }
 	#speakers .thumbnail img {
 		width: 75%;
-		position: relative;
-		left: 0%;
+		top: 0%;
 	}
-	.do-up .caption-category a { font-size: 9px; word-wrap: break-word;}
+	.do-up .caption-category a { font-size: 12px; word-wrap: break-word;}
+	.do-up .caption-text { font-size: 12px; }
 	.thumbnail .caption { padding: 9px 0px; }
 }
 /*-----  End of Speakers  ------*/
@@ -121,5 +164,20 @@ video#bgvid { height: 100%; }
 
 @media (max-width: 991px) {
 	#sponsors .slide-btn { max-width: 100%; }
+	#organizers .owl-item img { max-width:100%; }
 }
 /*-----  End of Sponsors  ------*/
+
+
+
+/*=============================
+=            Price            =
+=============================*/
+.price-number {
+	display: inline-block;
+	font-size: 44px;
+	line-height: 28px;
+	font-weight: 600;
+}
+/*-----  End of Price  ------*/
+
