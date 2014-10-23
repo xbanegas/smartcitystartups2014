@@ -180,16 +180,11 @@
                                     <h3 class="slide-subtitle">April 23-24, 2015 <br>Wynwood - Miami, Fl</h3>
                                     <div class="countdown-wrapper">
                                         <div class="defaultCountdown clearfix is-countdown">
-                                                <span class="countdown-row countdown-show4">
-                                                    
+                                                <span class="countdown-row countdown-show2">
                                                     <span class="countdown-section">
                                                         <span class="countdown-amount">100</span>
                                                         <span class="countdown-period">Startups</span>
-                                                    </span>  
-                                                    <span class="countdown-section">
-                                                        <span class="countdown-amount">1000</span>
-                                                        <span class="countdown-period">Participants</span>
-                                                    </span>           
+                                                    </span>        
                                                     <span id="weather-span" class="countdown-section">
                                                         <span id="weather" class="countdown-amount">85&deg;F</span>
                                                         <span class="countdown-period">Curr. Temp</span>
@@ -881,13 +876,20 @@
         <!-- Our Team -->
         <section class="page-section speakers" id="speakers" ng-app="scs415" ng-controller="MainCtrl">
             <div class="container">
-                <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="0">Who Participates In Smart City Startups? <small><p>In 2014, participants came from 32 cities in the US, EU and Africa. </p>
 
-<p>Participants represented startups, venture funds, local government, real estate develops, global technology firms, retailers, non-profits and individuals passionate about helping startups to solve urban problems.</p> 
-</small></h3>
+                <div class="row" id="about-participants">
+                    <div class="col-md-5 col-xs-12" >
+                        <h3 class="section-title" data-animation="fadeInUp" data-animation-delay="0">
+                            Who Participates In City Startups? 
+                        </h3>
+                    </div>
+                    <div class="col-md-7 col-xs-12">
+                        <p><strong>In 2014, participants came from <em>32</em> cities in the US, EU and Africa. </strong></p>
+                        <p>Participants represented startups, venture funds, local government, real estate develops, global technology firms, retailers, non-profits and individuals passionate about helping startups to solve urban problems.</p> 
+                    </div>
+                </div>
 
-                <div class="row" ng-repeat="attRow in attRows2">
-                    
+                <div class="row" ng-repeat="attRow in attRows2">                    
                     <div class="col-xs-4 col-md-4 speaker" data-animation="fadeInUp" data-animation-delay="700" ng-repeat="attCol in attRow" > 
                         <div class="thumbnail do-up no-border">
                             <img ng-src="assets/img/people/{{participants[attCol].avatar}}" class="img-responsive" alt="">
@@ -897,7 +899,6 @@
                                         <h4 class="caption-title"></h4>
                                         <p class="caption-category"><a href="#">{{participants[attCol].name}}</a></p>
                                         <p class="caption-text">{{participants[attCol].org}}</p>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -1420,7 +1421,7 @@
                                     <h3 class="price-label-title">Gov / Academia / Press Pass</h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">Discounted</span><span class="price-number" style="color:#3498db; width:0px;">0</span><span class="price-per"> </span>
+                                    <span class="price-unit">Discounted</span><span class="price-number" style="color:#3498db; width:0px;"></span><span class="price-per"> </span>
                                     <small>Invite Only</small>
                                 </div>
                             </div>
@@ -1618,6 +1619,7 @@
 
 <script src="assets/js/angular.js"></script>
 <script src="assets/js/scs415.js"></script>
+<script src="assets/js/custom.js"></script>
 <script>
 //getUrlVars from http://papermashup.com/read-url-get-variables-withjavascript/
     // function getUrlVars() {
