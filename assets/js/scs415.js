@@ -2,6 +2,43 @@ var app = angular.module( 'scs415', [] );
 
 app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
 
+    $scope.attRows2 = [
+        ['rosebroome','dougchertok','andrewfrey'],
+        ['storybellows','matthaggman','anthonytownsend']
+    ];
+    $scope.participants = {
+        'rosebroome': {
+            name: 'Rose Broome',
+            avatar: 'rosebroome.png',
+            org: 'HandUp'
+        },
+        'dougchertok': {
+            name: 'Doug Chertok',
+            avatar: 'dougchertok.jpg',
+            org: 'VastVC'
+        },
+        'andrewfrey': {
+            name: 'Andrew Frey',
+            avatar: 'andrewfrey.jpg',
+            org: 'CC Residential'
+        },
+        'storybellows': {
+            name: 'Story Bellows',
+            avatar: 'storybellows.jpg',
+            org: 'Urban Mechanics'
+        },
+        'matthaggman': {
+            name: 'Matt Haggman',
+            avatar: 'matthaggman.jpg',
+            org: 'Knight Foundation'
+        },      
+        'anthonytownsend': {
+            name: 'Anthony Townsend',
+            avatar: 'anthonytownsend.jpg',
+            org: 'NYU'
+        },             
+    }
+
     $scope.attRows = [
         ['bmw','vastvc','omidyar'],
         ['kauffman','citymart','newurbanmechanics'],

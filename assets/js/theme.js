@@ -177,6 +177,19 @@ var theme = function () {
             });
             return false;
         });
+        $(".scroll-to").click(function () {
+
+            var headerH = $('header').outerHeight();
+            $(".sf-menu a").removeClass('active');
+            //$(this).addClass('active');
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top - 44 + "px"
+            }, {
+                duration: 1200,
+                easing: "easeInOutExpo"
+            });
+            return false;
+        });        
 
     }
 
@@ -572,6 +585,17 @@ var theme = function () {
                 afterUpdate: function(){
                     testimonialsFix();
                 }
+            });
+        },        // Partners Slider
+        initOrganizerSlider: function () {
+            $("#organizers").owlCarousel({
+                items: 4,
+                itemsDesktop: false,
+                itemsDesktopSmall: [991, 4],
+                itemsTablet: [768, 3],
+                itemsMobile: [479, 2],
+                autoPlay: true,
+                pagination: false
             });
         },
         // Partners Slider
