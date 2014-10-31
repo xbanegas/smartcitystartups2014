@@ -6,6 +6,7 @@ app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
         ['rosebroome','dougchertok','andrewfrey'],
         ['storybellows','matthaggman','anthonytownsend']
     ];
+
     $scope.participants = {
         'rosebroome': {
             name: 'Rose Broome',
@@ -443,5 +444,33 @@ app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
             domain: 'handup.us'
         }
     };
+
+    $scope.tweets = [
+        {
+            body: "@shaunabe very interesting indeed -- I am glad Stonly was so persistent I come today as well!'",
+            body_link: 'https://twitter.com/ndahlberg/status/459837222850924544',
+            author: '@ndahlberg',
+            author_link: 'https://twitter.com/ndahlberg'
+        },
+        {
+            body: "fun, fascinating - great day at @UrbanUsCo #SmartCityStartups event in Miami w/ hand-picked group of key innovators.",
+            body_link: 'https://twitter.com/anthonymobile/status/459466692729769984',
+            author: '@anthonymobile',
+            author_link: 'https://twitter.com/anthonymobile'    
+        },
+        {
+            body: "THANK YOU!! Big shout to @shaunabe and @StonlyBaptiste for putting together brilliant #scs414",
+            body_link: "https://twitter.com/LLGACities/status/459826552935817216",
+            author: "@LLGACities",
+            author_link: "https://twitter.com/LLGACities"
+        },
+        {
+            body: "i'd like the world to know i had a great time at http://smartcitystartups.com . thank you @shaunabe, @StonlyBaptiste, @UrbanUsCo, & team. #scs2014",
+            body_link: "https://twitter.com/WELLO/status/460845542801543168",
+            author: "@WELLO",
+            author_link: "https://twitter.com/WELLO"
+        }
+    ];
+
     
 });
