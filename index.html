@@ -40,7 +40,7 @@
     </script>
     <![endif]-->
 </head>
-<body id="home" class="wide" >
+<body id="home" class="wide" ng-app="scs415" ng-controller="MainCtrl">
 
 <!-- Preloader -->
 <div id="preloader">
@@ -874,7 +874,7 @@
         <!-- /Timeline -->
 
         <!-- Our Team -->
-        <section class="page-section speakers" id="speakers" ng-app="scs415" ng-controller="MainCtrl">
+        <section class="page-section speakers" id="speakers">
             <div class="container">
 
                 <div class="row" id="about-participants">
@@ -1052,13 +1052,45 @@
 
             </div>
             <br><br>
-            <div class="row">
+   <!--         <div class="row">
+             <div class="text-center">
+                        <a class="btn btn-theme btn-theme-primary slide-btn scroll-three" datatoggle="modal" datatarget="#myModal" href="#price" target="_blank" >Join Us</a>
+                    </div>
+            </div>
+    -->
+        </section>
+        <!-- /Testimonials -->
+
+
+        <!-- Last tweet -->
+        <section class="page-section twitter" data-stellar-background-ratio="0.5">
+            <div class="container" data-stellar-background-ratio="0.5">
+                <div class="last-tweet">
+                    <div class="owl-controls">
+                        <a id="prev-tweet" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
+                        <a id="next-tweet" class="next" href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="twitter-icon" data-animation="bounceIn" data-animation-delay="100">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div id="last-tweets" data-animation="fadeInUp" data-animation-delay="500">
+                        <div class="media" ng-repeat="tweet in tweets">
+                            <div class="media-body">
+                                <p>{{tweet.body}}</p>
+                                <p><a href="{{tweet.author_link}}">-- {{tweet.author}}</a></p>
+                                <p><a href="{{tweet.body_link}}">See Tweet</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /last-tweet -->
             <div class="text-center">
                         <a class="btn btn-theme btn-theme-primary slide-btn scroll-three" datatoggle="modal" datatarget="#myModal" href="#price" target="_blank" >Join Us</a>
                     </div>
             </div>
+            </div><!-- /container  -->
         </section>
-        <!-- /Testimonials --
+        <!-- /Last tweet -->
+
 
         <!-- About event --
         <section class="page-section about-event">
@@ -1340,51 +1372,6 @@
             </div>
         </section>
         <!-- /Partners -->
-
-        <!-- Last tweet --
-        <section class="page-section twitter" data-stellar-background-ratio="0.5">
-            <div class="container" data-stellar-background-ratio="0.5">
-                <div class="last-tweet">
-                    <div class="owl-controls">
-                        <a id="prev-tweet" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a id="next-tweet" class="next" href="#"><i class="fa fa-angle-right"></i></a>
-                    </div>
-                    <div class="twitter-icon" data-animation="bounceIn" data-animation-delay="100">
-                        <i class="fa fa-twitter"></i>
-                    </div>
-                    <div id="last-tweets" data-animation="fadeInUp" data-animation-delay="500">
-                        <div class="media">
-                            <div class="media-body">
-                                <p>Check out this great <a href="#">#themeforest</a> item 'Sarkkara Responsive Real Estate HTML5 Template' <a href="#">http://t.co/wLgkNgmBLJ</a></p>
-                                <p>2 hours ago <a href="#">@jjthemes</a></p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-body">
-                                <p>Check out this great <a href="#">#themeforest</a> item 'Sarkkara Responsive Real Estate HTML5 Template' <a href="#">http://t.co/wLgkNgmBLJ</a></p>
-                                <p>2 hours ago <a href="#">@jjthemes</a></p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-body">
-                                <p>Check out this great <a href="#">#themeforest</a> item 'Sarkkara Responsive Real Estate HTML5 Template' <a href="#">http://t.co/wLgkNgmBLJ</a></p>
-                                <p>2 hours ago <a href="#">@jjthemes</a></p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-body">
-                                <p>Check out this great <a href="#">#themeforest</a> item 'Sarkkara Responsive Real Estate HTML5 Template' <a href="#">http://t.co/wLgkNgmBLJ</a></p>
-                                <p>2 hours ago <a href="#">@jjthemes</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /last-tweet --
-                <div class="text-center">
-                    <a class="btn btn-theme" href="#">Follow</a>
-                </div>
-            </div><!-- /container  --
-        </section>
-        <!-- /Last tweet -->
 
         <!-- Price Table -->
         <section class="page-section" id="price">
