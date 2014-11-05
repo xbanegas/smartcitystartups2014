@@ -1,10 +1,10 @@
-var app = angular.module( 'scs415', [] );
+var app = angular.module('scs415', []);
 
-app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
+app.controller('MainCtrl', function($scope, $http, $compile, $log) {
 
     $scope.attRows2 = [
-        ['rosebroome','dougchertok','andrewfrey'],
-        ['storybellows','matthaggman','anthonytownsend']
+        ['rosebroome', 'dougchertok', 'andrewfrey'],
+        ['storybellows', 'matthaggman', 'anthonytownsend']
     ];
 
     $scope.participants = {
@@ -32,34 +32,34 @@ app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
             name: 'Matt Haggman',
             avatar: 'matthaggman.jpg',
             org: 'Knight Foundation'
-        },      
+        },
         'anthonytownsend': {
             name: 'Anthony Townsend',
             avatar: 'anthonytownsend.jpg',
             org: 'NYU'
-        },             
+        },
     }
 
     $scope.attRows = [
-        ['bmw','vastvc','omidyar'],
-        ['kauffman','citymart','newurbanmechanics'],
-        ['nyu','cleanweb','livingcities'],
-        ['bostonglobalventures', 'hraadvisors', 'codeforamerica' ],
-        ['ccg','miamidade', 'nei'],
-        ['publicstuff','seeclickfix', 'tumml'],
-        ['constant_contact','brck', 'architizer'],
-        ['birdi', 'dash','kairos'],
-        ['learnernation','neighbor','pwrstation'],
-        ['rachio','seamlessdocs','kiwi'],
-        ['whatupbridge','thetransitapp','spravwater'],
-        ['cyclehop','ccresidential','pedleymillin'],
+        ['bmw', 'vastvc', 'omidyar'],
+        ['kauffman', 'citymart', 'newurbanmechanics'],
+        ['nyu', 'cleanweb', 'livingcities'],
+        ['bostonglobalventures', 'hraadvisors', 'codeforamerica'],
+        ['ccg', 'miamidade', 'nei'],
+        ['publicstuff', 'seeclickfix', 'tumml'],
+        ['constant_contact', 'brck', 'architizer'],
+        ['birdi', 'dash', 'kairos'],
+        ['learnernation', 'neighbor', 'pwrstation'],
+        ['rachio', 'seamlessdocs', 'kiwi'],
+        ['whatupbridge', 'thetransitapp', 'spravwater'],
+        ['cyclehop', 'ccresidential', 'pedleymillin'],
         ['straat', 'miles', 'privateadvising'],
-        ['tresmares','loveland','smartprocure'],
-        ['republicbike','p3gm','urban4m'],
-        ['techcocktail', 'refreshmiami','trovedata'],
+        ['tresmares', 'loveland', 'smartprocure'],
+        ['republicbike', 'p3gm', 'urban4m'],
+        ['techcocktail', 'refreshmiami', 'trovedata'],
         ['zipcar', 'sobi', 'placemeter'],
         ['greaterplaces', 'opportunityspace', 'weathercloud'],
-        ['univision','bostonnewtech','parkjockey'],
+        ['univision', 'bostonnewtech', 'parkjockey'],
         ['civicinsight', 'nyupt', 'citytrackerx'],
         ['handup']
     ];
@@ -445,32 +445,385 @@ app.controller( 'MainCtrl', function( $scope, $http, $compile ) {
         }
     };
 
-    $scope.tweets = [
+    $scope.tweets = [{
+        body: "@shaunabe very interesting indeed -- I am glad Stonly was so persistent I come today as well!'",
+        body_link: 'https://twitter.com/ndahlberg/status/459837222850924544',
+        author: '@ndahlberg',
+        author_link: 'https://twitter.com/ndahlberg'
+    }, {
+        body: "fun, fascinating - great day at @UrbanUsCo #SmartCityStartups event in Miami w/ hand-picked group of key innovators.",
+        body_link: 'https://twitter.com/anthonymobile/status/459466692729769984',
+        author: '@anthonymobile',
+        author_link: 'https://twitter.com/anthonymobile'
+    }, {
+        body: "THANK YOU!! Big shout to @shaunabe and @StonlyBaptiste for putting together brilliant #scs414",
+        body_link: "https://twitter.com/LLGACities/status/459826552935817216",
+        author: "@LLGACities",
+        author_link: "https://twitter.com/LLGACities"
+    }, {
+        body: "i'd like the world to know i had a great time at http://smartcitystartups.com . thank you @shaunabe, @StonlyBaptiste, @UrbanUsCo, & team. #scs2014",
+        body_link: "https://twitter.com/WELLO/status/460845542801543168",
+        author: "@WELLO",
+        author_link: "https://twitter.com/WELLO"
+    }];
+
+
+    $scope.timeline = [
         {
-            body: "@shaunabe very interesting indeed -- I am glad Stonly was so persistent I come today as well!'",
-            body_link: 'https://twitter.com/ndahlberg/status/459837222850924544',
-            author: '@ndahlberg',
-            author_link: 'https://twitter.com/ndahlberg'
+            date: "April 22",
+            title: "Meetings and Exploration",
+            events: [{
+                time: "Ongoing",
+                location: "TBD",
+                title: "Schedule meetings with the Urban.Us team",
+                description: ""
+            }, {
+                time: "Afternoon (TBD)",
+                location: "TBD",
+                title: "Tour of Wynwood and galleries",
+                description: ""
+            }, {
+                time: "7:00 - 9:00pm",
+                location: "TBD",
+                title: "Dinner and drinks",
+                description: "Engineered collisions through pre-arranged groupings and seatings at kickoff dinner and drinks event in Wynwood. Participants will have their first chance to interact with the unconference selection board."
+            }]
         },
         {
-            body: "fun, fascinating - great day at @UrbanUsCo #SmartCityStartups event in Miami w/ hand-picked group of key innovators.",
-            body_link: 'https://twitter.com/anthonymobile/status/459466692729769984',
-            author: '@anthonymobile',
-            author_link: 'https://twitter.com/anthonymobile'    
+            date: "April 23",
+            title: "Urban Tech Festival",
+            events: [
+                {
+                    time: "8:30 - 9:30am",
+                    location: "TBD",
+                    title: "Breakfast",
+                    description: "Optional continental breakfast and coffee. Continued opportunity to fill in the unconference selection board."
+                }, {
+                    time: "9:30 - 9:45am",
+                    location: "TBD",
+                    title: "Welcome and Icebreaker",
+                    description: ""
+                }, {
+                    time: "9:45 - 10:30am",
+                    location: "TBD",
+                    title: "Opening Keynote",
+                    description: "First keynote presentation followed by Q&A"
+                }, {
+                    time: "10:30 - 10:40am",
+                    location: "TBD",
+                    title: "Stretch Break",
+                    description: ""
+                }, {
+                    time: "10:40 - 11:00am",
+                    location: "TBD",
+                    title: "Shaun Abrahamson: The Urban Tech Space",
+                    description: ""
+                }, {
+                    time: "11:00 - 11:30am",
+                    location: "TBD",
+                    title: "Sascha Haselmayer: Procurement and CityMart",
+                    description: "An opening presentation on CityMart’s experiences working in the B2G sector and advice for other companies."
+                }, {
+                    time: "11:30 - 12:30pm",
+                    location: "TBD",
+                    title: "Lunch",
+                    description: "Final opportunity to fill in the unconference selection board."
+                }, {
+                    time: "12:30 - 2:00pm",
+                    location: "TBD",
+                    title: "Showcase setup and meeting time",
+                    description: ""
+                }, {
+                    time: "2:00 - 3:00pm",
+                    location: "TBD",
+                    title: "VIP Showcase",
+                    description: "Special guests are given a private tour of the showcase and chance to meet specific companies before the event opens to the public."
+                }, {
+                    time: "3:00 - 6:30pm",
+                    location: "TBD",
+                    title: "Urban Tech Showcase",
+                    description: "The showcase opens to the public, featuring a gallery of startups along with 3 groups of short PechaKucha talks by founders, advisors and investors attending the conference. Visitors will be provided with a map of companies categorized by topic area to help them navigate the space."
+                }, {
+                    time: "6:30 - 7:30pm",
+                    location: "TBD",
+                    title: "Festival Keynote and Talks",
+                    description: "An evening keynote and three selected PechaKucha talks for the happy hour crowd at the showcase."
+                }
+            ]
         },
         {
-            body: "THANK YOU!! Big shout to @shaunabe and @StonlyBaptiste for putting together brilliant #scs414",
-            body_link: "https://twitter.com/LLGACities/status/459826552935817216",
-            author: "@LLGACities",
-            author_link: "https://twitter.com/LLGACities"
-        },
-        {
-            body: "i'd like the world to know i had a great time at http://smartcitystartups.com . thank you @shaunabe, @StonlyBaptiste, @UrbanUsCo, & team. #scs2014",
-            body_link: "https://twitter.com/WELLO/status/460845542801543168",
-            author: "@WELLO",
-            author_link: "https://twitter.com/WELLO"
+            date: "April 24",
+            title: "Urban Tech Summit",
+            events: [
+                {
+                    time: "8:30 - 9:30am",
+                    location: "TBD",
+                    title: "Breakfast",
+                    description: "Optional continental breakfast and coffee."
+                }, {
+                    time: "9:30 - 9:45am",
+                    location: "TBD",
+                    title: "Welcome and Icebreaker",
+                    description: ""
+                }, {
+                    time: "9:45 - 11:00am",
+                    location: "TBD",
+                    title: "Future of Urban Tech: Talks and Discussion",
+                    description: "A series of PechaKucha style talks from 5 people on the topic of the urban tech field, followed by a group Q&A moderated by Shaun Abrahamson."
+                }, {
+                    time: "11:00 - 12:00pm",
+                    location: "TBD",
+                    title: "Breakout 1: Distribution",
+                    description: "Three breakout groups on B2G, B2B and B2C business models. Group moderators: B2G (Sascha Haselmayer), B2B (TBD), B2C (TBD)"
+                }, {
+                    time: "12:00 - 1:00pm",
+                    location: "TBD",
+                    title: "Lunch",
+                    description: ""
+                }, {
+                    time: "1:00 - 2:00pm",
+                    location: "TBD",
+                    title: "Breakout 2: Unconference",
+                    description: "6 optional group slots, filled in by participants beforehand."
+                }, {
+                    time: "2:00 - 2:15pm",
+                    location: "TBD",
+                    title: "Stretch Break",
+                    description: ""
+                }, {
+                    time: "2:15 - 3:15pm",
+                    location: "TBD",
+                    title: "Breakout 3: Unconference",
+                    description: "6 optional group slots, filled in by participants beforehand."
+                }, {
+                    time: "3:15 - 4:30pm",
+                    location: "TBD",
+                    title: "Future of Funding: Talks and Discussion",
+                    description: "A series of PechaKucha style talks from 5 people on the topic of the evolving landscape for funding urban tech projects, followed by a group Q&A moderated by Shaun Abrahamson."
+                }, {
+                    time: "4:30 - 4:45pm",
+                    location: "TBD",
+                    title: "Award Announcement & Close",
+                    description: "Urban.Us announces funding of latest companies; closing of conference by Shaun Abrahamson."
+                }
+            ]
         }
+
     ];
 
-    
+    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+
+        function x_initIsotope() {
+
+            var $container = $('#timeline1');
+            var $container2 = $('#timeline2');
+            var $container3 = $('#timeline3');
+
+            function addMarker() {
+                // add marker
+                $container.addClass('vline');
+                $container.find('.item').each(function() {
+
+                    // css
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var str = $(this).css('left');
+                        var strIe9 = str;
+                    }
+                    if ($.browser.webkit) {
+                        var str = $(this).css('-webkit-transform')
+                    } else {
+                        var str = $(this).css('transform');
+                    }
+
+                    // split
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substr = strIe9.split('px');
+                    } else {
+                        var substr = str.split(', ');
+                    }
+
+                    // substring
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substrNumber = substr;
+                    }
+                    if ($.browser.msie && parseInt($.browser.version, 10) > 9) {
+                        var substrNumber = substr[substr.length - 4];
+                    } else {
+                        var substrNumber = substr[substr.length - 2];
+                    }
+
+                    // add class
+                    if (substrNumber < 1) {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-left');
+                    } else {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-right');
+                    }
+                });
+            }
+
+            function addMarker2() {
+                $container2.addClass('vline');
+                $container2.find('.item').each(function() {
+
+                    // css
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var str = $(this).css('left');
+                        var strIe9 = str;
+                    }
+                    if ($.browser.webkit) {
+                        var str = $(this).css('-webkit-transform')
+                    } else {
+                        var str = $(this).css('transform');
+                    }
+
+                    // split
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substr = strIe9.split('px');
+                    } else {
+                        var substr = str.split(', ');
+                    }
+
+                    // substring
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substrNumber = substr;
+                    }
+                    if ($.browser.msie && parseInt($.browser.version, 10) > 9) {
+                        var substrNumber = substr[substr.length - 4];
+                    } else {
+                        var substrNumber = substr[substr.length - 2];
+                    }
+
+                    // add class
+                    if (substrNumber < 1) {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-left');
+                    } else {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-right');
+                    }
+                });
+            }
+
+            function addMarker3() {
+                $container3.addClass('vline');
+                $container3.find('.item').each(function() {
+
+                    // css
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var str = $(this).css('left');
+                        var strIe9 = str;
+                    }
+                    if ($.browser.webkit) {
+                        var str = $(this).css('-webkit-transform')
+                    } else {
+                        var str = $(this).css('transform');
+                    }
+
+                    // split
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substr = strIe9.split('px');
+                    } else {
+                        var substr = str.split(', ');
+                    }
+
+                    // substring
+                    if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+                        var substrNumber = substr;
+                    }
+                    if ($.browser.msie && parseInt($.browser.version, 10) > 9) {
+                        var substrNumber = substr[substr.length - 4];
+                    } else {
+                        var substrNumber = substr[substr.length - 2];
+                    }
+
+                    // add class
+                    if (substrNumber < 1) {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-left');
+                    } else {
+                        $(this).removeClass('item-left').removeClass('item-right');
+                        $(this).addClass('item-right');
+                    }
+                });
+            }
+
+            $(window).resize(function() {
+                // relayout on window resize
+                $container.isotope('reLayout', function() {
+                    addMarker();
+                });
+                $container2.isotope('reLayout', function() {
+                    addMarker2();
+                });
+                $container3.isotope('reLayout', function() {
+                    addMarker3();
+                });
+                $.waypoints('refresh');
+            });
+            $(window).load(function() {
+                // initialize isotope
+                $container.isotope({
+                    itemSelector: '.item',
+                    animationEngine: 'css'
+                });
+                $container.isotope('reLayout', function() {
+                    addMarker();
+                });
+                $container2.isotope({
+                    itemSelector: '.item',
+                    animationEngine: 'css'
+                });
+                $container2.isotope('reLayout', function() {
+                    addMarker2();
+                });
+                $container3.isotope({
+                    itemSelector: '.item',
+                    animationEngine: 'css'
+                });
+                $container3.isotope('reLayout', function() {
+                    addMarker3();
+                });
+            });
+            $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                $('.timeline').find('.item').removeClass('item-left').removeClass('item-right');
+                $('.timeline').removeClass('vline');
+            });
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                $container.isotope('reLayout', function() {
+                    addMarker();
+                });
+                $container2.isotope('reLayout', function() {
+                    addMarker2();
+                });
+                $container3.isotope('reLayout', function() {
+                    addMarker3();
+                });
+                $.waypoints('refresh');
+            });
+
+            // Add active class to first tab
+            $('.tab-pane:first-child').addClass('in active');
+            $('#tabs li:first-child').addClass('active');
+        }
+
+
+        x_initIsotope();
+    });
+
+
+});
+
+
+app.directive('timeline', function($timeout) {
+    return {
+        link: function(scope, element, attr) {
+            if (scope.$last === true) {
+                $timeout(function() {
+                    scope.$emit('ngRepeatFinished');
+                });
+            }
+        }
+    }
 });

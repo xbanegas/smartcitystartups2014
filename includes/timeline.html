@@ -1,0 +1,58 @@
+<div id="timeline-wrapper" >
+<div class="row clearfix timeline-tabs" data-animation="fadeInUp" data-animation-delay="100">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <ul id="tabs" class="nav nav-pills nav-justified" >
+            <li class="" ng-repeat="day in timeline"><a href="#tab-{{$index+1}}" data-toggle="tab">
+                {{day.date}} 
+                <br><small>{{day.title}}</small>
+            </a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="tab-content">
+    <div class="tab-pane fade" id="tab-{{$index+1}}" ng-repeat="day in timeline" data-timeline>
+        <div id="timeline{{$index+1}}" class="row timeline no-transition">
+            <div class="item col-sm-6" ng-repeat="event in day.events">
+                <span class="dot"></span>
+                <article class="post-wrap thumbnail">
+                    <div class="post-media">
+                        <div class="thumbnail no-border do-hover">
+                            <img class="img-responsive" src="assets/img/preview/schedule-1.jpg" alt="">
+                            <div class="caption">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <p class="caption-buttons">
+                                            <a href="#" class="btn caption-social facebook"><i class="fa fa-facebook"></i></a>
+                                            <a href="#" class="btn caption-social twitter"><i class="fa fa-twitter"></i></a>
+                                            <a href="#" class="btn caption-social google-plus"><i class="fa fa-google-plus"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-meta clearfix">
+                            <span class="pull-left">
+                                <span class="post-date"><i class="fa fa-clock-o"></i>&nbsp;{{event.time}}</span>
+                                <span class="post-location"><i class="fa fa-map-marker"></i>&nbsp;{{event.location}}</span>
+                            </span>
+                            <!-- <span class="pull-right"><a href="#"><i class="fa fa-heart"></i> 26</a></span> -->
+                        </div>
+                    </div>
+                    <div class="post-header">
+                        <h4 class="post-title"><a href="#">{{event.title}}</a>
+                        </h4>
+                        <!-- <span class="post-author">by <a href="#">Author Name</a> -->
+                        </span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-excerpt">{{event.description}}</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div> <!-- /.tab-pane -->
+</div> <!-- /.tab-content -->
+
+</div> <!-- /#timeline-wrapper -->
+
