@@ -64,6 +64,16 @@ video#bgvid { width:100%; }
 	.countdown-period { font-size: 9px; }
 }
 
+
+.countdown-show3 .countdown-section {
+    width: 30%;
+}
+
+.countdown-show3 .countdown-section + .countdown-section {
+    margin-left: 4%;
+}
+
+
 /*-----  End of #Top Slider  ------*/
 
 
