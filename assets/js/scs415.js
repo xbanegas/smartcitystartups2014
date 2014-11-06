@@ -475,7 +475,7 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
             events: [{
                 time: "Ongoing",
                 location: "TBD",
-                title: "Schedule meetings with the Urban.Us team",
+                title: "Scheduled meetings with the Urban.Us team",
                 description: ""
             }, {
                 time: "Afternoon (TBD)",
