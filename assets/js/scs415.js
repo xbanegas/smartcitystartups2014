@@ -11,32 +11,38 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
         'rosebroome': {
             name: 'Rose Broome',
             avatar: 'rosebroome.png',
-            org: 'HandUp'
+            org: 'HandUp',
+            role: 'Founder'
         },
         'dougchertok': {
             name: 'Doug Chertok',
             avatar: 'dougchertok.jpg',
-            org: 'VastVC'
+            org: 'VastVC',
+            role: 'Investor'
         },
         'andrewfrey': {
             name: 'Andrew Frey',
             avatar: 'andrewfrey.jpg',
-            org: 'CC Residential'
+            org: 'CC Residential',
+            role: 'Real Estate Developer'
         },
         'storybellows': {
             name: 'Story Bellows',
             avatar: 'storybellows.jpg',
-            org: 'Urban Mechanics'
+            org: 'Urban Mechanics',
+            role: 'Local Government'
         },
         'matthaggman': {
             name: 'Matt Haggman',
             avatar: 'matthaggman.jpg',
-            org: 'Knight Foundation'
+            org: 'Knight Foundation',
+            role: 'Philanthropist'
         },
         'anthonytownsend': {
             name: 'Anthony Townsend',
             avatar: 'anthonytownsend.jpg',
-            org: 'NYU'
+            org: 'NYU',
+            role: 'Researcher'
         },
     }
 
@@ -475,7 +481,7 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
             events: [{
                 time: "Ongoing",
                 location: "TBD",
-                title: "Scheduled meetings with the Urban.Us team",
+                title: "Scheduled one on one meetings",
                 description: ""
             }, {
                 time: "Afternoon (TBD)",
