@@ -548,12 +548,12 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
                     time: "3:00 - 6:30pm",
                     location: "TBD",
                     title: "Urban Tech Showcase",
-                    description: "The showcase opens to the public, featuring a gallery of startups along with 3 groups of short PechaKucha talks by founders, advisors and investors attending the conference. Visitors will be provided with a map of companies categorized by topic area to help them navigate the space."
+                    description: "The showcase opens to the public, featuring a gallery of startups along with 3 groups of short lighting talks by founders, advisors and investors attending the conference. Visitors will be provided with a map of companies categorized by topic area to help them navigate the space."
                 }, {
                     time: "6:30 - 7:30pm",
                     location: "TBD",
                     title: "Festival Keynote and Talks",
-                    description: "An evening keynote and three selected PechaKucha talks for the happy hour crowd at the showcase."
+                    description: "An evening keynote and three selected lighting talks for the happy hour crowd at the showcase."
                 }
             ]
         },
@@ -575,7 +575,7 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
                     time: "9:45 - 11:00am",
                     location: "TBD",
                     title: "Future of Urban Tech: Talks and Discussion",
-                    description: "A series of PechaKucha style talks from 5 people on the topic of the urban tech field, followed by a group Q&A moderated by Shaun Abrahamson."
+                    description: "A series of lighting talks from 5 people on the topic of the urban tech field, followed by a group Q&A moderated by Shaun Abrahamson."
                 }, {
                     time: "11:00 - 12:00pm",
                     location: "TBD",
@@ -605,7 +605,7 @@ app.controller('MainCtrl', function($scope, $http, $compile, $log) {
                     time: "3:15 - 4:30pm",
                     location: "TBD",
                     title: "Future of Funding: Talks and Discussion",
-                    description: "A series of PechaKucha style talks from 5 people on the topic of the evolving landscape for funding urban tech projects, followed by a group Q&A moderated by Shaun Abrahamson."
+                    description: "A series of lighting talks from 5 people on the topic of the evolving landscape for funding urban tech projects, followed by a group Q&A moderated by Shaun Abrahamson."
                 }, {
                     time: "4:30 - 4:45pm",
                     location: "TBD",
