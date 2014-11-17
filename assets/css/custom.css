@@ -35,14 +35,13 @@ body { padding-top: 100px; }
 #top-slider { padding-bottom: 0px; padding-top: 0px; }
 
 @media (max-width: 991px) {
-	#top-slider { padding-top: 70px; }
 }
+
+
 
 /*==========  .slide-image  ==========*/
 
 video#bgvid { width:100%; }
-
-
 
 
 @media (max-width: 991px) {
@@ -52,18 +51,28 @@ video#bgvid { width:100%; }
 
 /*==========  .slide-caption  ==========*/
 
-
-
 .countdown-section { border: none; }
 .countdown-amount,
 .countdown-period { font-size: 1.7em; }
+.slide-caption-inner { margin-top: 10%; }
 
-.slide-caption-inner { margin-top: 15%!important; }
+@media (max-width: 1024px) {
+	.slide-caption-inner { margin-top: 5%; }
+}
 
 @media (max-width: 991px) {
 	.countdown-period { font-size: 9px; }
+	.slide-caption-inner { margin-bottom: 10%; }
+	.slide-btn {padding: 10px 20px;}
 }
 
+@media (max-width: 768px) {
+	.slide-caption-inner { margin-top: 5%!important; }
+}
+
+@media (max-width: 479px) {
+	.slide-title { font-size: 24px; }
+}
 
 .countdown-show3 .countdown-section {
     width: 30%;
@@ -71,6 +80,51 @@ video#bgvid { width:100%; }
 
 .countdown-show3 .countdown-section + .countdown-section {
     margin-left: 4%;
+}
+
+
+/*==========  .seen-in  ==========*/
+
+.seen-in { 
+	background: rgba(164, 172, 181, 0.6); /* A4ACB5 */
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	z-index: 1;
+}
+
+.seen-in{
+	background-image: url("../img/patterns/cross_scratches_grey.png");
+	opacity: 0.8;
+	border-top: 4px solid gray;
+}
+
+.seen-in-header {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 6%;
+}
+
+.seen-in img.mar-t{margin-top: 8%;}
+
+.seen-in-inner img { 
+	padding: 10px 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+}
+
+@media (max-width: 991px) { 
+	.seen-in-inner img {
+		max-width: 100%;
+		max-height: 48px;
+	}
+}
+
+@media (max-width: 768px){
+	.seen-in-header-wrapper {display:none;}
+	.seen-in img.mar-t{margin-top: 0%;}
 }
 
 
