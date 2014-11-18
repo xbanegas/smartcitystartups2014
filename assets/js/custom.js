@@ -1,15 +1,28 @@
 (function() {
 
-	var i=0;
+	var i=0,
+		header = $('header'),
+		video = $('#bgvid'),
+		slider = $('#top-slider');
 
     function vidSize() {
     	// console.log('launched sizer ' + i);
-    	var sliderHeight = $('#top-slider').height(),
-    		vidHeight = $('#bgvid').height();
+    	var sliderHeight = slider.height(),
+    		vidHeight = video.height(),
+    		windowHeight = $(window).height(),
+    		windowWidth = $(window).width(),
+    		headerHeight = header.height();
     	
-    	if (sliderHeight != vidHeight) { 
-    		$('#top-slider').height(vidHeight);
-    	};
+    	if (sliderHeight != vidHeight && windowWidth < 1300) {
+    		// console.log('first if triggered');
+    		slider.height(windowHeight - headerHeight);
+    		sliderHeight = slider.height();
+    		$('#bgvid').height(sliderHeight);
+    	} else if (sliderHeight != vidHeight && windowWidth >= 1300) {
+    		// console.log('second if triggered');
+    		slider.height(windowHeight - headerHeight);
+    		$('#bgvid').width('100%');
+    	}
 
     	i++;
     };
