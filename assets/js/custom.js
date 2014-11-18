@@ -18,10 +18,12 @@
     		slider.height(windowHeight - headerHeight);
     		sliderHeight = slider.height();
     		$('#bgvid').height(sliderHeight);
+    		$('.main-slider').height(slider.height());
     	} else if (sliderHeight != vidHeight && windowWidth >= 1300) {
     		// console.log('second if triggered');
     		slider.height(windowHeight - headerHeight);
     		$('#bgvid').width('100%');
+    		$('.main-slider').height(slider.height());
     	}
 
     	i++;
