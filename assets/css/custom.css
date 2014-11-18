@@ -45,6 +45,8 @@ body { padding-top: 100px; }
 	position: relative;
 	top: 50%;
 	transform: translateY(-60%);
+	-webkit-transform: translateY(-60%);
+	-ms-transform: translateY(-60%);
 }
 
 .countdown-section { border: none; }
